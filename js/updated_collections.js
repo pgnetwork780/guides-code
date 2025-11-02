@@ -2165,12 +2165,12 @@ const collectionsData = {
                 },
                 {
                     "rank": 6,
-                    "name": "Creepyshorts",
-                    "score": "6.6M+"
+                    "name": "sagnikisawesome",
+                    "score": "N/A"
                 },
                 {
                     "rank": 7,
-                    "name": "sagnikisawesome",
+                    "name": "Creepyshorts",
                     "score": "N/A"
                 },
                 {
