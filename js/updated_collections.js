@@ -879,7 +879,7 @@ const collectionsData = {
                 {
                     "rank": 7,
                     "name": "TINKUGAMER1232",
-                    "score": "3.6M+"
+                    "score": "N/A"
                 },
                 {
                     "rank": 8,
@@ -1312,7 +1312,7 @@ const collectionsData = {
                 {
                     "rank": 4,
                     "name": "NINTIN7238",
-                    "score": "19.2M+"
+                    "score": "N/A"
                 },
                 {
                     "rank": 5,
