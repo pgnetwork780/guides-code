@@ -27,8 +27,8 @@ const collectionsData = [
       { "rank": 6, "name": "Shakilbaby", "score": "N/A" },
       { "rank": 7, "name": "DRONZAR_OP", "score": "4.1M+" },
       { "rank": 8, "name": "Yogi_Ji_gaming", "score": "N/A" },
-      { "rank": 9, "name": "veldra5692", "score": "N/A" }
-      { "rank": 10, "name": "SoundClover8088", "score": "2.5M+" },
+      { "rank": 9, "name": "Veldra5692", "score": "N/A" },
+      { "rank": 10, "name": "SoundClover8088", "score": "2.5M+" }
     ]
   }
 ];
