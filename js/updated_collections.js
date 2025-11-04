@@ -573,17 +573,17 @@ const collectionsData = {
                 },
                 {
                     "rank": 2,
+                    "name": "Naitikwarior",
+                    "score": "42.4M+"
+                },
+                {
+                    "rank": 3,
                     "name": "PriestlyPath870",
                     "score": "N/A"
                 },
                 {
-                    "rank": 3,
-                    "name": "Hefty6248",
-                    "score": "N/A"
-                },
-                {
                     "rank": 4,
-                    "name": "Unknown",
+                    "name": "Hefty6248",
                     "score": "N/A"
                 },
                 {
