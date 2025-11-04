@@ -134,6 +134,7 @@
         document.addEventListener("DOMContentLoaded", () => {
             showBossTypes();
         });
+        document.getElementById("sidelid").addEventListener("click", e => e.stopPropagation());
 
         function showBossTypes() {
             currentBoss = null;
