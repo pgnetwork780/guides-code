@@ -138,6 +138,7 @@
         document.addEventListener("DOMContentLoaded", () => {
             showMainCategories();
         });
+        document.getElementById("sidelid").addEventListener("click", e => e.stopPropagation());
         function showMainCategories() {
             currentCategory = null;
             const collectionGrid = document.getElementById("collectionGrid");
