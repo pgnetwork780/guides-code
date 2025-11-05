@@ -109,12 +109,14 @@
     margin: 12px 0;
   }
   .backpack-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
-    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
     margin: 12px 0 20px;
   }
   .backpack-option {
+    width: 100px;
     background: rgba(20, 20, 20, 0.6);
     border: 2px solid transparent;
     border-radius: 10px;
@@ -163,23 +165,23 @@
     <label>Choose Backpack (optional):</label>
     <div id="backpackSelector" class="backpack-grid">
       <div class="backpack-option" data-slots="3">
-        <img src="./assets/bags/100px-Small_Minion_Backpack.png" alt="Small Backpack">
+        <img src="../assets/bags/100px-Small_Minion_Backpack.png" alt="Small Backpack">
         <span>Small</span>
       </div>
       <div class="backpack-option" data-slots="9">
-        <img src="./assets/bags/100px-Medium_Minion_Backpack.webp" alt="Medium Backpack">
+        <img src="../assets/bags/100px-Medium_Minion_Backpack.webp" alt="Medium Backpack">
         <span>Medium</span>
       </div>
       <div class="backpack-option" data-slots="15">
-        <img src="./assets/bags/100px-Large_Minion_Backpack.webp" alt="Large Backpack">
+        <img src="../assets/bags/100px-Large_Minion_Backpack.webp" alt="Large Backpack">
         <span>Large</span>
       </div>
       <div class="backpack-option" data-slots="21">
-        <img src="./assets/bags/100px-Huge_Minion_Backpack.webp" alt="Huge Backpack">
+        <img src="../assets/bags/100px-Huge_Minion_Backpack.webp" alt="Huge Backpack">
         <span>Huge</span>
       </div>
       <div class="backpack-option" data-slots="27">
-        <img src="./assets/bags/100px-Giant_Minion_Backpack.webp" alt="Giant Backpack">
+        <img src="../assets/bags/100px-Giant_Minion_Backpack.webp" alt="Giant Backpack">
         <span>Giant</span>
       </div>
     </div>
@@ -269,5 +271,4 @@
     });
   </script>
 </body>
-  </html>
-  
+</html>
