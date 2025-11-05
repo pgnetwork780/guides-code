@@ -16,13 +16,11 @@
   <title>Minion Inventory Calculator</title>
   <script src="../js/script.js" defer></script>
   <link rel="stylesheet" href="../css/essential.css">
-
   <style>
   * {
     -webkit-tap-highlight-color: transparent;
     box-sizing: border-box;
   }
-
   body {
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
     color: #fff;
@@ -30,7 +28,6 @@
     background: url('../Backgrounds/mines.webp') no-repeat center center fixed;
     background-size: cover;
   }
-
   body::after {
     content: "";
     position: fixed;
@@ -41,7 +38,6 @@
     background: rgba(0, 0, 0, 0.3);
     z-index: -1;
   }
-
   .container {
     background: rgba(30, 30, 30, 0.4);
     border-radius: 12px;
@@ -52,19 +48,16 @@
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
   }
-
   h1 {
     text-align: center;
     margin-bottom: 18px;
     color: #007bff;
     font-size: 3rem;
   }
-
   label {
     font-weight: 600;
     color: #fff;
   }
-
   input[type="number"], select {
     width: 100%;
     padding: 10px;
@@ -74,11 +67,9 @@
     background-color: #0d0d0d;
     color: #fff;
   }
-  
   input[type="range"] {
     display: block;
   }
-
   button {
     background-color: #007bff;
     color: white;
@@ -91,37 +82,69 @@
     margin: 0 auto;
     display: block;
   }
-
   button:hover {
     background-color: #0056b3;
   }
-
   .result {
     margin-top: 20px;
     font-size: 18px;
     text-align: center;
   }
-
   .error {
     color: red;
   }
-
   .success {
     color: #007bff;
   }
-
   #note {
     font-size: 12px;
     color: #fff;
     margin-top: 10px;
     text-align: center;
   }
-  
   .toggle-group {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 12px 0;
+  }
+  .backpack-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    gap: 10px;
+    margin: 12px 0 20px;
+  }
+  .backpack-option {
+    background: rgba(20, 20, 20, 0.6);
+    border: 2px solid transparent;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    backdrop-filter: blur(4px);
+  }
+  .backpack-option:hover {
+    transform: scale(1.05);
+    border-color: #007bff;
+  }
+  .backpack-option.selected {
+    border-color: #007bff;
+    background: rgba(0, 123, 255, 0.15);
+    box-shadow: 0 0 10px rgba(0,123,255,0.4);
+  }
+  .backpack-option img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    pointer-events: none;
+  }
+  .backpack-option span {
+    display: block;
+    font-size: 0.9rem;
+    margin-top: 6px;
+    color: #fff;
+    font-weight: 600;
   }
   </style>
 </head>
@@ -137,8 +160,31 @@
     <label for="inventorySlots">Minion Inventory Slots:</label>
     <input type="number" id="inventorySlots" placeholder="Enter number of slots" required>
 
-    <label for="backpackSlots">Backpack Slots (optional):</label>
-    <input type="number" id="backpackSlots" placeholder="Enter number of slots" min="0">
+    <label>Choose Backpack (optional):</label>
+    <div id="backpackSelector" class="backpack-grid">
+      <div class="backpack-option" data-slots="3">
+        <img src="./assets/bags/100px-Small_Minion_Backpack.png" alt="Small Backpack">
+        <span>Small</span>
+      </div>
+      <div class="backpack-option" data-slots="9">
+        <img src="./assets/bags/100px-Medium_Minion_Backpack.webp" alt="Medium Backpack">
+        <span>Medium</span>
+      </div>
+      <div class="backpack-option" data-slots="15">
+        <img src="./assets/bags/100px-Large_Minion_Backpack.webp" alt="Large Backpack">
+        <span>Large</span>
+      </div>
+      <div class="backpack-option" data-slots="21">
+        <img src="./assets/bags/100px-Huge_Minion_Backpack.webp" alt="Huge Backpack">
+        <span>Huge</span>
+      </div>
+      <div class="backpack-option" data-slots="27">
+        <img src="./assets/bags/100px-Giant_Minion_Backpack.webp" alt="Giant Backpack">
+        <span>Giant</span>
+      </div>
+    </div>
+
+    <input type="number" id="backpackSlots" value="0" style="display:none;">
 
     <label for="fuel">Fuel: <span id="fuelValue">No fuel</span></label>
     <input type="range" id="fuel" min="0" max="100" value="0" step="1" oninput="updateFuelValue(this.value)">
@@ -176,11 +222,6 @@
     function updateFuelValue(value) {
       document.getElementById('fuelValue').innerText = value == 0 ? "No fuel" : value + '%';
     }
-    function updateToggleLabel(id) {
-      const checkbox = document.getElementById(id);
-      const label = document.getElementById(id + 'Label');
-      label.innerText = checkbox.checked ? 'Yes' : 'No';
-    }
     function calculateDays() {
       const inventorySlots = parseFloat(document.getElementById('inventorySlots').value) || 0;
       const backpackSlots = parseFloat(document.getElementById('backpackSlots').value) || 0;
@@ -190,27 +231,21 @@
       const production = parseFloat(document.getElementById('production').value) || 0;
       const note = document.getElementById('note');
       const result = document.getElementById('result');
-
       if (inventorySlots <= 0 || production <= 0 || isNaN(production)) {
         result.innerText = "Please fill the required fields correctly.";
         result.className = "result error";
         note.style.display = "none";
         return;
       }
-
       const totalSlots = (inventorySlots * 64) + (backpackSlots * 64);
       let effectiveProduction = production;
-
       if (blockConversion === 'yes') effectiveProduction /= 160;
       if (fuelPercentage > 0) effectiveProduction += (effectiveProduction * (fuelPercentage / 100));
       if (diamondSpreading === 'yes') effectiveProduction += (effectiveProduction * 0.1);
-
       const daysToFill = totalSlots / effectiveProduction;
-
       const averageMonth = 30.42;
       const averageYear = 365.04;
       let breakdown = "";
-
       if (daysToFill >= averageYear) {
         const years = Math.floor(daysToFill / averageYear);
         breakdown += `${years} year${years > 1 ? "s" : ""} `;
@@ -219,14 +254,20 @@
         const months = Math.floor((daysToFill % averageYear) / averageMonth);
         breakdown += `${months} month${months > 1 ? "s" : ""} `;
       }
-
       const days = (daysToFill % averageMonth).toFixed(2);
       breakdown += `${days} day${days > 1 ? "s" : ""}`;
-
       result.innerHTML = `Days to fill inventory: ${daysToFill.toFixed(2)}<br>${breakdown}`;
       result.className = "result success";
       note.style.display = "block";
     }
+    document.querySelectorAll('.backpack-option').forEach(option => {
+      option.addEventListener('click', () => {
+        document.querySelectorAll('.backpack-option').forEach(o => o.classList.remove('selected'));
+        option.classList.add('selected');
+        document.getElementById('backpackSlots').value = option.getAttribute('data-slots');
+      });
+    });
   </script>
 </body>
-</html>
+  </html>
+  
