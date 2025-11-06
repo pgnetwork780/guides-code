@@ -166,25 +166,25 @@ form.addEventListener('submit', async (e) => {
   submitBtn.disabled = true;
   spinner.style.display = 'inline-block';
 
-  const payload = {
-    portalTitle: 'CraftersMC Guides Leaderboard Submission',
-    timestamp: new Date().toISOString(),
-    playerName,
-    leaderboards: selectedLB,
-    contact: contacts.length ? contacts : null,
-    comments: comments.length ? comments : null,
-    files: uploadedFiles.length ? uploadedFiles : null
-  };
+  const formData = new FormData();
+  formData.append("playerName", playerName);
+  formData.append("leaderboards", selectedLB.join(","));
+  if (contacts.length) formData.append("contact", contacts.join("\n"));
+  if (comments.length) formData.append("notes", comments.join("\n"));
+
+  // Attach files
+  for (const file of screenshotInput.files) {
+    formData.append("image", file, file.name);
+  }
 
   try {
     const res = await fetch(WEBHOOK_URL, {
       method: 'POST',
-      headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify(payload)
+      body: formData
     });
 
     status.textContent = res.ok ? 'Submission successful.' : 'Submission failed.';
-    if (res.ok) form.reset(), previewContainer.innerHTML = '', uploadedFiles = [];
+    if (res.ok) form.reset(), previewContainer.innerHTML = '';
   } finally {
     submitBtn.disabled = false;
     spinner.style.display = 'none';
