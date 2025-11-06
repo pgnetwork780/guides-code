@@ -11,8 +11,8 @@ const collectionsData = [
       { "rank": 6, "name": "DRONZAR_OP", "score": "25.6M+" },
       { "rank": 7, "name": "SoundClover8088", "score": "19.1M+" },
       { "rank": 8, "name": "Firegod174", "score": "17M+" },
-      { "rank": 9, "name": "Herejefferson", "score": "15.2M+" },
-      { "rank": 10, "name": "Aryaan045", "score": "10M+" }
+      { "rank": 9, "name": "Herejefferson", "score": "15.5M+" },
+      { "rank": 10, "name": "GRAVITY8303", "score": "15.5M+" }
     ]
   },
   {
