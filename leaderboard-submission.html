@@ -1,195 +1,313 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>CraftersMC Guides — Leaderboard Submission Portal</title>
 
-<style>
-  :root { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial; }
-  body { background: #f7f9fb; max-width: 900px; margin: 30px auto; padding: 20px; color: #111; }
-  h1 { font-size: 22px; margin-bottom: 14px; text-align: center; font-weight: 600; }
-  form { background: #ffffff; padding: 20px; border-radius: 8px; box-shadow: 0 6px 18px rgba(20, 30, 50, 0.06); }
-  label { display: block; margin-bottom: 6px; font-size: 14px; font-weight: 500; }
-  input[type=text], input[type=file], textarea {
-    width: 100%; padding: 10px; border: 1px solid #dfe3ea; border-radius: 6px; font-size: 14px;
-  }
-  textarea { resize: vertical; }
-  .row { display: flex; gap: 12px; margin-bottom: 12px; }
-  .col { flex: 1; }
-  .note { display: block; font-size: 13px; margin-top: 4px; color: #666; }
-  #lbContainer label { display: flex; align-items: center; padding: 4px 0; font-size: 14px; gap: 6px; cursor: pointer; }
-  details { background: #f3f6fa; border-radius: 6px; padding: 10px; }
-  details summary { cursor: pointer; font-weight: 600; font-size: 14px; padding: 4px 0; }
-  .preview-img, .preview-video { margin-top: 8px; max-width: 200px; border-radius: 6px; border: 1px solid #e3e6ea; }
-  button { background: #0b76ff; color: white; border: none; padding: 10px 14px; border-radius: 8px; cursor: pointer; font-weight: 600; transition: background 0.2s; }
-  button:hover { background: #005ce7; }
-  button[disabled] { opacity: 0.6; cursor: not-allowed; }
-  .status { margin-top: 12px; font-size: 14px; font-weight: 500; color: #333; }
-  #spinner { font-size: 14px; color: #444; }
-</style>
+<head>
+  <link rel="icon" href="assets/cmc-icon.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="CraftersMC Leaderboards Submission Portal">
+  <meta property="og:description"
+    content="Submit your information to be considered for inclusion in the CraftersMC Leaderboards. Provide proof and details for accurate ranking!">
+  <meta property="og:image"
+    content="https://cdn.discordapp.com/attachments/1416722412032229457/1423270231740256256/Screenshot_20250524-2112033.png?ex=68dfb332&is=68de61b2&hm=809b90de9e5b77d767b558b836bb6b6f1cf3bf58f6e45a168400aa8654409a4c&">
+  <meta property="og:url" content="https://craftersmc-guides.pages.dev/leaderboards-submission.html">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#007bff">
+  <meta name="twitter:card" content="summary_large_image" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="js/script.js" defer></script>
+  <link rel="stylesheet" href="css/essential.css">
+  <link rel="stylesheet" href="css/event.css">
+  <title>CraftersMC Guides — Leaderboard Submission Portal</title>
+
+  <style>
+    h1 {
+      font-size: 22px;
+      margin-bottom: 14px;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    body {
+      background: url('Backgrounds/3.webp') no-repeat center center fixed;
+      font-family: Arial, sans-serif;
+      background-blend-mode: multiply;
+    }
+
+    form {
+      background: #ffffff25;
+      border: 2px solid #dfe3ea;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 6px 18px rgba(20, 30, 50, 0.06);
+      backdrop-filter: blur(10px);
+      width: 95%;
+      max-width: 800px;
+      margin: 0 auto 40px auto;
+      color: #fff;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    input[type=text],
+    input[type=file],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #434343;
+      border-radius: 6px;
+      font-size: 14px;
+      background-color: #11111171;
+      color: #fff;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    .row {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .col {
+      flex: 1;
+    }
+
+    .note {
+      display: block;
+      font-size: 13px;
+      margin-top: 4px;
+      color: #666;
+    }
+
+    #lbContainer label {
+      display: flex;
+      align-items: center;
+      padding: 4px 0;
+      font-size: 14px;
+      gap: 6px;
+      cursor: pointer;
+    }
+
+    details {
+      background: #ffffff10;
+      border-radius: 6px;
+      padding: 10px;
+    }
+
+    details summary {
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 14px;
+      padding: 4px 0;
+    }
+
+    .preview-img,
+    .preview-video {
+      margin-top: 8px;
+      max-width: 200px;
+      border-radius: 6px;
+      border: 1px solid #e3e6ea;
+    }
+
+    button[disabled] {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    .status {
+      margin-top: 12px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #333;
+    }
+
+    #spinner {
+      font-size: 14px;
+      color: #444;
+    }
+  </style>
 </head>
 
 <body>
-<h1>CraftersMC Guides — Leaderboard Submission Portal</h1>
-
-<form id="submissionForm" autocomplete="off">
-
-  <div class="row">
-    <div class="col">
-      <label for="playerName">Player IGN</label>
-      <input id="playerName" name="playerName" type="text" required placeholder="Example: Notch123"/>
-    </div>
+  <div id="loader">
+    <div></div>
+    <div></div>
+    <div></div>
   </div>
+  <div class="top"></div>
+  <div class="sidebar" id="sidebar"></div>
+  <div id="sidebar-overlay" onclick="toggleSidebar()"></div>
+  <span class="material-icons" id="scrollToTopBtn">north</span>
+  <div class="gap"></div>
+  <h1>CraftersMC Guides — Leaderboard Submission Portal</h1>
 
-  <div style="margin-bottom: 12px;">
-    <label>Which Leaderboard(s)?</label>
-    <div id="lbContainer" style="padding:8px;border:1px solid #e3e6ea;border-radius:6px;">
-      <label><input type="checkbox" name="leaderboards" value="Collection"> Collection</label>
-      <label><input type="checkbox" name="leaderboards" value="Slayers"> Slayers</label>
-      <label><input type="checkbox" name="leaderboards" value="Gems"> Gems</label>
-      <label><input type="checkbox" name="leaderboards" value="Playtime"> Playtime</label>
-      <label><input type="checkbox" name="leaderboards" value="Achievements"> Achievements</label>
-      <label><input type="checkbox" name="leaderboards" value="Avg Skill"> Avg Skill</label>
-      <label><input type="checkbox" name="leaderboards" value="Crafters Lvl"> Crafters Lvl</label>
+  <form id="submissionForm" autocomplete="off">
+
+    <div class="row">
+      <div class="col">
+        <label for="playerName">Player IGN</label>
+        <input id="playerName" name="playerName" type="text" required placeholder="Example: Notch123" />
+      </div>
     </div>
-    <small class="note">Select at least one.</small>
-  </div>
 
-  <div style="margin-bottom:12px">
-    <label for="screenshot">Proof Upload (Multiple Allowed) Max 5MB each</label>
-    <input id="screenshot" type="file" name="image" multiple accept="image/*,video/*" />
-    <small class="note">Accepted: images or videos | Max size per file: 5MB</small>
-    <div class="preview" id="previewContainer" aria-live="polite"></div>
-  </div>
-
-  <details style="margin-bottom:12px;">
-    <summary>Optional Information</summary>
-    <div id="contactFields">
-      <label>Contact Info</label>
-      <input type="text" name="contact" placeholder="Discord#1234 or Email" />
+    <div style="margin-bottom: 12px;">
+      <label>Which Leaderboard(s)?</label>
+      <div id="lbContainer" style="padding:8px;border:1px solid #e3e6ea;border-radius:6px;">
+        <label><input type="checkbox" name="leaderboards" value="Collection"> Collection</label>
+        <label><input type="checkbox" name="leaderboards" value="Slayers"> Slayers</label>
+        <label><input type="checkbox" name="leaderboards" value="Gems"> Gems</label>
+        <label><input type="checkbox" name="leaderboards" value="Playtime"> Playtime</label>
+        <label><input type="checkbox" name="leaderboards" value="Achievements"> Achievements</label>
+        <label><input type="checkbox" name="leaderboards" value="Avg Skill"> Avg Skill</label>
+        <label><input type="checkbox" name="leaderboards" value="Crafters Lvl"> Crafters Lvl</label>
+      </div>
+      <small class="note">Select at least one.</small>
     </div>
-    <button type="button" id="addContactBtn" style="margin:6px 0;">+ Add Another Contact</button>
 
-    <div id="commentFields" style="margin-top:12px;">
-      <label>Comments</label>
-      <textarea name="comments" rows="3" placeholder="Anything you would like to mention"></textarea>
+    <div style="margin-bottom:12px">
+      <label for="screenshot">Proof Upload (Multiple Allowed) Max 5MB each</label>
+      <input id="screenshot" type="file" name="image" multiple accept="image/*,video/*" />
+      <small class="note">Accepted: images or videos | Max size per file: 5MB</small>
+      <div class="preview" id="previewContainer" aria-live="polite"></div>
     </div>
-    <button type="button" id="addCommentBtn" style="margin-top:6px;">+ Add Another Comment</button>
-  </details>
 
-  <div style="display:flex;gap:10px;align-items:center;">
-    <button type="submit" id="submitBtn">Submit</button>
-    <div id="spinner" style="display:none">Sending…</div>
-  </div>
+    <details style="margin-bottom:12px;">
+      <summary>Optional Information</summary>
+      <div id="contactFields">
+        <label>Contact Info</label>
+        <input type="text" name="contact" placeholder="Discord#1234 or Email" />
+      </div>
+      <button class="btn" type="button" id="addContactBtn" style="margin:6px 0;">+ Add Another Contact</button>
 
-  <div class="status" id="status"></div>
-</form>
+      <div id="commentFields" style="margin-top:12px;">
+        <label>Comments</label>
+        <textarea name="comments" rows="3" placeholder="Anything you would like to mention"></textarea>
+      </div>
+      <button class="btn" type="button" id="addCommentBtn" style="margin-top:6px;">+ Add Another Comment</button>
+    </details>
 
-<script>
-const WEBHOOK_URL = 'https://webhook-manager.craftersmcguides.workers.dev/leaderboard';
-const maxFileSize = 5 * 1024 * 1024;
-const form = document.getElementById('submissionForm');
-const screenshotInput = document.getElementById('screenshot');
-const previewContainer = document.getElementById('previewContainer');
-const status = document.getElementById('status');
-const submitBtn = document.getElementById('submitBtn');
-const spinner = document.getElementById('spinner');
+    <div style="display:flex;gap:10px;align-items:center;">
+      <button class="btn" type="submit" id="submitBtn">Submit</button>
+      <div id="spinner" style="display:none">Sending…</div>
+    </div>
 
-let uploadedFiles = [];
+    <div class="status" id="status"></div>
+  </form>
+  <div id="footer"></div>
 
-screenshotInput.addEventListener('change', () => {
-  previewContainer.innerHTML = '';
-  uploadedFiles = [];
+  <script>
+    const WEBHOOK_URL = 'https://webhook-manager.craftersmcguides.workers.dev/leaderboard';
+    const maxFileSize = 5 * 1024 * 1024;
+    const form = document.getElementById('submissionForm');
+    const screenshotInput = document.getElementById('screenshot');
+    const previewContainer = document.getElementById('previewContainer');
+    const status = document.getElementById('status');
+    const submitBtn = document.getElementById('submitBtn');
+    const spinner = document.getElementById('spinner');
 
-  for (const file of screenshotInput.files) {
-    if (file.size > maxFileSize) {
-      status.textContent = `One or more files exceed 5MB limit.`;
-      screenshotInput.value = '';
-      return;
-    }
+    let uploadedFiles = [];
 
-    const reader = new FileReader();
-    reader.onload = () => {
-      const base64 = reader.result.split(',')[1];
-      uploadedFiles.push({ filename: file.name, size: file.size, type: file.type, base64 });
+    screenshotInput.addEventListener('change', () => {
+      previewContainer.innerHTML = '';
+      uploadedFiles = [];
 
-      if (file.type.startsWith('image/')) {
-        const img = document.createElement('img');
-        img.className = 'preview-img';
-        img.src = reader.result;
-        previewContainer.appendChild(img);
-      } else if (file.type.startsWith('video/')) {
-        const vid = document.createElement('video');
-        vid.className = 'preview-video';
-        vid.src = reader.result;
-        vid.controls = true;
-        previewContainer.appendChild(vid);
+      for (const file of screenshotInput.files) {
+        if (file.size > maxFileSize) {
+          status.textContent = `One or more files exceed 5MB limit.`;
+          screenshotInput.value = '';
+          return;
+        }
+
+        const reader = new FileReader();
+        reader.onload = () => {
+          const base64 = reader.result.split(',')[1];
+          uploadedFiles.push({ filename: file.name, size: file.size, type: file.type, base64 });
+
+          if (file.type.startsWith('image/')) {
+            const img = document.createElement('img');
+            img.className = 'preview-img';
+            img.src = reader.result;
+            previewContainer.appendChild(img);
+          } else if (file.type.startsWith('video/')) {
+            const vid = document.createElement('video');
+            vid.className = 'preview-video';
+            vid.src = reader.result;
+            vid.controls = true;
+            previewContainer.appendChild(vid);
+          }
+        };
+        reader.readAsDataURL(file);
       }
-    };
-    reader.readAsDataURL(file);
-  }
-});
-
-document.getElementById('addContactBtn').onclick = () => {
-  const container = document.getElementById('contactFields');
-  const input = document.createElement('input');
-  input.type = "text";
-  input.name = "contact";
-  input.placeholder = "Additional contact info";
-  input.style.marginTop = "6px";
-  container.appendChild(input);
-};
-
-document.getElementById('addCommentBtn').onclick = () => {
-  const container = document.getElementById('commentFields');
-  const textarea = document.createElement('textarea');
-  textarea.name = "comments";
-  textarea.rows = 3;
-  textarea.placeholder = "Additional comment";
-  textarea.style.marginTop = "6px";
-  container.appendChild(textarea);
-};
-
-form.addEventListener('submit', async (e) => {
-  e.preventDefault();
-  status.textContent = '';
-
-  const playerName = document.getElementById('playerName').value.trim();
-  const selectedLB = [...document.querySelectorAll('input[name="leaderboards"]:checked')].map(cb => cb.value);
-  const contacts = [...document.querySelectorAll('input[name="contact"]')].map(i => i.value.trim()).filter(v => v);
-  const comments = [...document.querySelectorAll('textarea[name="comments"]')].map(t => t.value.trim()).filter(v => v);
-
-  if (!playerName) return status.textContent = 'Player name is required.';
-  if (selectedLB.length === 0) return status.textContent = 'Select at least one leaderboard.';
-
-  submitBtn.disabled = true;
-  spinner.style.display = 'inline-block';
-
-  const formData = new FormData();
-  formData.append("playerName", playerName);
-  formData.append("leaderboards", selectedLB.join(","));
-  if (contacts.length) formData.append("contact", contacts.join("\n"));
-  if (comments.length) formData.append("notes", comments.join("\n"));
-
-  // Attach files
-  for (const file of screenshotInput.files) {
-    formData.append("image", file, file.name);
-  }
-
-  try {
-    const res = await fetch(WEBHOOK_URL, {
-      method: 'POST',
-      body: formData
     });
 
-    status.textContent = res.ok ? 'Submission successful.' : 'Submission failed.';
-    if (res.ok) form.reset(), previewContainer.innerHTML = '';
-  } finally {
-    submitBtn.disabled = false;
-    spinner.style.display = 'none';
-  }
-});
-</script>
+    document.getElementById('addContactBtn').onclick = () => {
+      const container = document.getElementById('contactFields');
+      const input = document.createElement('input');
+      input.type = "text";
+      input.name = "contact";
+      input.placeholder = "Additional contact info";
+      input.style.marginTop = "6px";
+      container.appendChild(input);
+    };
+
+    document.getElementById('addCommentBtn').onclick = () => {
+      const container = document.getElementById('commentFields');
+      const textarea = document.createElement('textarea');
+      textarea.name = "comments";
+      textarea.rows = 3;
+      textarea.placeholder = "Additional comment";
+      textarea.style.marginTop = "6px";
+      container.appendChild(textarea);
+    };
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      status.textContent = '';
+
+      const playerName = document.getElementById('playerName').value.trim();
+      const selectedLB = [...document.querySelectorAll('input[name="leaderboards"]:checked')].map(cb => cb.value);
+      const contacts = [...document.querySelectorAll('input[name="contact"]')].map(i => i.value.trim()).filter(v => v);
+      const comments = [...document.querySelectorAll('textarea[name="comments"]')].map(t => t.value.trim()).filter(v => v);
+
+      if (!playerName) return status.textContent = 'Player name is required.';
+      if (selectedLB.length === 0) return status.textContent = 'Select at least one leaderboard.';
+
+      submitBtn.disabled = true;
+      spinner.style.display = 'inline-block';
+
+      const formData = new FormData();
+      formData.append("playerName", playerName);
+      formData.append("leaderboards", selectedLB.join(","));
+      if (contacts.length) formData.append("contact", contacts.join("\n"));
+      if (comments.length) formData.append("notes", comments.join("\n"));
+
+      // Attach files
+      for (const file of screenshotInput.files) {
+        formData.append("image", file, file.name);
+      }
+
+      try {
+        const res = await fetch(WEBHOOK_URL, {
+          method: 'POST',
+          body: formData
+        });
+
+        status.textContent = res.ok ? 'Submission successful.' : 'Submission failed.';
+        if (res.ok) form.reset(), previewContainer.innerHTML = '';
+      } finally {
+        submitBtn.disabled = false;
+        spinner.style.display = 'none';
+      }
+    });
+  </script>
 </body>
+
 </html>
