@@ -21,10 +21,10 @@
     <div class="gap"></div>
     <div class="success-message" id="successMessage">
         <h1>Thank You!</h1>
-        <p>Your bug report has been submitted successfully.</p>
+        <p>Your feedback has been submitted successfully.</p>
     </div>
     <div class="container" id="reportContainer">
-        <h3 class="h3">Send Us A Feedback</h3>
+        <h3 class="h3">Send Us Your Feedback</h3>
         <div class="panel" id="panel">✔ Feedback Submitted, Thank you!</div>
         <form id="reportForm">
             <div class="group">
@@ -32,15 +32,78 @@
                 <input class="input" type="text" id="username" required>
             </div>
             <div class="group">
-                <label class="label" for="bug">Describe the Bug:</label>
-                <textarea class="textarea" id="bug" rows="5" required></textarea>
+                <label class="label" for="discord">Discord Username:</label>
+                <input class="input" type="text" id="discord">
             </div>
-            <button type="submit" id="submitBtn">Submit Report</button>
+            <div class="group">
+                <label class="label" for="desc">Describe your issue or suggestion:</label>
+                <textarea class="textarea" id="desc" rows="5" required></textarea>
+            </div>
+            <div class="group">
+                <label class="label">Additional Contact Info (optional):</label>
+                <div id="contactFields"></div>
+                <button type="button" id="addContactBtn" class="input">Add Contact</button>
+            </div>
+            <div class="group">
+                <label class="label">Comments (optional):</label>
+                <div id="commentFields"></div>
+                <button type="button" id="addCommentBtn" class="input">Add Comment</button>
+            </div>
+            <div class="group">
+                <label class="label" for="file">Attach files (optional):</label>
+                <input class="input" type="file" id="file" multiple>
+            </div>
+            <button type="submit" id="submitBtn">Submit Feedback</button>
         </form>
     </div>
 
     <div id="footer"></div>
     <script>
+        // Add/remove contact and comment fields
+        document.getElementById('addContactBtn').onclick = () => {
+            const container = document.getElementById('contactFields');
+            const wrapper = document.createElement('div');
+            wrapper.style.display = "flex";
+            wrapper.style.alignItems = "center";
+            wrapper.style.gap = "6px";
+            const input = document.createElement('input');
+            input.type = "text";
+            input.name = "contact";
+            input.placeholder = "Additional contact info";
+            input.style.marginTop = "6px";
+            const removeBtn = document.createElement('button');
+            removeBtn.type = "button";
+            removeBtn.textContent = "Remove";
+            removeBtn.className = "input";
+            removeBtn.style.marginLeft = "6px";
+            removeBtn.onclick = () => wrapper.remove();
+            wrapper.appendChild(input);
+            wrapper.appendChild(removeBtn);
+            container.appendChild(wrapper);
+        };
+
+        document.getElementById('addCommentBtn').onclick = () => {
+            const container = document.getElementById('commentFields');
+            const wrapper = document.createElement('div');
+            wrapper.style.display = "flex";
+            wrapper.style.alignItems = "center";
+            wrapper.style.gap = "6px";
+            const textarea = document.createElement('textarea');
+            textarea.name = "comments";
+            textarea.rows = 3;
+            textarea.placeholder = "Additional comment";
+            textarea.style.marginTop = "6px";
+            const removeBtn = document.createElement('button');
+            removeBtn.type = "button";
+            removeBtn.textContent = "Remove";
+            removeBtn.className = "input";
+            removeBtn.style.marginLeft = "6px";
+            removeBtn.onclick = () => wrapper.remove();
+            wrapper.appendChild(textarea);
+            wrapper.appendChild(removeBtn);
+            container.appendChild(wrapper);
+        };
+
         const reportForm = document.getElementById("reportForm");
         const panel = document.getElementById("panel");
         const successMessage = document.getElementById("successMessage");
@@ -49,17 +112,33 @@
             e.preventDefault();
 
             const inGameName = document.getElementById("username").value.trim();
-            const bug = document.getElementById("bug").value.trim();
+            const discord = document.getElementById("discord").value.trim();
+            const desc = document.getElementById("desc").value.trim();
+
+            // Collect additional contacts
+            const contactInputs = document.querySelectorAll('#contactFields input[name="contact"]');
+            const contacts = Array.from(contactInputs).map(input => input.value.trim()).filter(Boolean);
+
+            // Collect comments
+            const commentInputs = document.querySelectorAll('#commentFields textarea[name="comments"]');
+            const comments = Array.from(commentInputs).map(input => input.value.trim()).filter(Boolean);
+
+            // Collect files
+            const fileInput = document.getElementById("file");
+            const files = fileInput.files ? Array.from(fileInput.files) : [];
 
             // Simplified payload structure
             const payload = {
-                type: "bug_report",
-                username: "Bug Reporter",
+                type: "feedback",
+                username: "Feedback Reporter",
                 content: {
                     reporter: {
-                        in_game_name: inGameName
+                        in_game_name: inGameName,
+                        discord: discord,
+                        contacts: contacts
                     },
-                    description: bug,
+                    description: desc,
+                    comments: comments,
                     timestamp: new Date().toISOString()
                 }
             };
@@ -77,11 +156,13 @@
                         panel.classList.remove("report-show");
                         successMessage.style.display = "block";
                         reportForm.reset();
+                        document.getElementById('contactFields').innerHTML = "";
+                        document.getElementById('commentFields').innerHTML = "";
                     }, 2000);
                 } else {
                     const errorText = await res.text();
                     console.error("Server error:", errorText);
-                    alert("Error submitting report. Server responded with: " + res.status);
+                    alert("Error submitting feedback. Server responded with: " + res.status);
                 }
             } catch (err) {
                 console.error("Error:", err);
