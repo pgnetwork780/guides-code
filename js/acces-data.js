@@ -1,17 +1,17 @@
 const accessories = [
       {
-        id: "campfire_initiate_badge",
-        name: "test",
-        icon: "img/Cobblestone.png"
+        id: "acacia_stop",
+        name: "Acacia Stop",
+        icon: "https://craftersmc.wiki.gg/images/thumb/Enchanted_Acacia_Log.png/256px-Enchanted_Acacia_Log.png?44c3f1"
       },
       {
-        id: "fire_talisman",
-        name: "Fire Talisman",
-        icon: "img/Cobblestone.png"
+        id: "bamboo_ring",
+        name: "Bamboo Ring",
+        icon: "https://craftersmc.wiki.gg/images/thumb/Bamboo_Ring.png/256px-Bamboo_Ring.png?6fbe06"
       },
       {
-        id: "coin_ring",
-        name: "Coin Ring",
-        icon: "img/Cobblestone.png"
+        id: "bamboo_talisman",
+        name: "Bamboo Talisman",
+        icon: "https://craftersmc.wiki.gg/images/thumb/Bamboo_Talisman.png/256px-Bamboo_Talisman.png?f117ce"
       }
     ];
