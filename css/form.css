@@ -50,6 +50,7 @@
   color: #fff;
   font-size: 14px;
   box-sizing: border-box;
+  margin-bottom: 10px;
 }
 
 .textarea {
@@ -99,20 +100,19 @@
 
 #submitBtn {
   width: 100%;
-  background: transparent;
+  background: #7bff6080;
   color: #fff;
   font-weight: bold;
   font-size: 18px;
-  border: 2px solid #fff;
   padding: 10px 15px;
   border-radius: 6px;
   cursor: pointer;
   transition: all 0.2s;
+  outline: 2px solid #001db3;
 }
 
 #submitBtn:hover {
-  background: #ffffff33;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  background: #3b5aff33;
 }
 
 .panel {
