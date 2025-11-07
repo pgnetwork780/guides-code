@@ -19,15 +19,15 @@ const collectionsData = [
     "name": "Wolf Slayer",
     "image": "https://craftersmc.wiki.gg/images/2/2e/Wolf_Spirit.png?e47d59",
     "players": [
-      { "rank": 1, "name": "SphinxWraith", "score": "N/A" },
-      { "rank": 2, "name": "DueBacon2007102", "score": "N/A" },
-      { "rank": 3, "name": "Herejefferson", "score": "N/A" },
-      { "rank": 4, "name": "HeGzoStRqFe", "score": "N/A" },
-      { "rank": 5, "name": "Itzomkar1232891", "score": "N/A" },
-      { "rank": 6, "name": "Shakilbaby", "score": "N/A" },
-      { "rank": 7, "name": "DRONZAR_OP", "score": "N/A" },
-      { "rank": 8, "name": "Yogi_Ji_gaming", "score": "N/A" },
-      { "rank": 9, "name": "Aryaan045", "score": "10M+" },
+      { "rank": 1, "name": "SphinxWraith", "score": "10M+" },
+      { "rank": 2, "name": "DueBacon2007102", "score": "10M+" },
+      { "rank": 3, "name": "Aryaan045", "score": "10M+" },
+      { "rank": 4, "name": "Herejefferson", "score": "N/A" },
+      { "rank": 5, "name": "HeGzoStRqFe", "score": "N/A" },
+      { "rank": 6, "name": "Itzomkar1232891", "score": "N/A" },
+      { "rank": 7, "name": "Shakilbaby", "score": "N/A" },
+      { "rank": 8, "name": "DRONZAR_OP", "score": "N/A" },
+      { "rank": 9, "name": "Yogi_Ji_gaming", "score": "N/A" },
       { "rank": 10, "name": "Veldra5692", "score": "N/A" }
     ]
   }
