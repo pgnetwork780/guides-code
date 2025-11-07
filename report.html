@@ -42,18 +42,18 @@
             <div class="group">
                 <label class="label">Additional Contact Info (optional):</label>
                 <div id="contactFields"></div>
-                <button type="button" id="addContactBtn" class="input">Add Contact</button>
+                <button type="button" id="addContactBtn" class="btn">Add Contact</button>
             </div>
             <div class="group">
                 <label class="label">Comments (optional):</label>
                 <div id="commentFields"></div>
-                <button type="button" id="addCommentBtn" class="input">Add Comment</button>
+                <button type="button" id="addCommentBtn" class="btn">Add Comment</button>
             </div>
             <div class="group">
                 <label class="label" for="file">Attach files (optional):</label>
-                <input class="input" type="file" id="file" multiple>
+                <input class="btn" type="file" id="file" multiple>
             </div>
-            <button type="submit" id="submitBtn">Submit Feedback</button>
+            <button type="submit" class="btn" id="submitBtn">Submit Feedback</button>
         </form>
     </div>
 
@@ -74,7 +74,7 @@
             const removeBtn = document.createElement('button');
             removeBtn.type = "button";
             removeBtn.textContent = "Remove";
-            removeBtn.className = "input";
+            removeBtn.className = "btn";
             removeBtn.style.marginLeft = "6px";
             removeBtn.onclick = () => wrapper.remove();
             wrapper.appendChild(input);
@@ -96,7 +96,7 @@
             const removeBtn = document.createElement('button');
             removeBtn.type = "button";
             removeBtn.textContent = "Remove";
-            removeBtn.className = "input";
+            removeBtn.className = "btn";
             removeBtn.style.marginLeft = "6px";
             removeBtn.onclick = () => wrapper.remove();
             wrapper.appendChild(textarea);
@@ -123,9 +123,21 @@
             const commentInputs = document.querySelectorAll('#commentFields textarea[name="comments"]');
             const comments = Array.from(commentInputs).map(input => input.value.trim()).filter(Boolean);
 
-            // Collect files
+            // Collect files and convert to base64
             const fileInput = document.getElementById("file");
             const files = fileInput.files ? Array.from(fileInput.files) : [];
+            const base64Files = await Promise.all(files.map(file => {
+                return new Promise((resolve, reject) => {
+                    const reader = new FileReader();
+                    reader.onload = () => resolve({
+                        name: file.name,
+                        type: file.type,
+                        data: reader.result.split(',')[1] // Remove data:mime/type;base64,
+                    });
+                    reader.onerror = reject;
+                    reader.readAsDataURL(file);
+                });
+            }));
 
             // Simplified payload structure
             const payload = {
@@ -139,7 +151,8 @@
                     },
                     description: desc,
                     comments: comments,
-                    timestamp: new Date().toISOString()
+                    timestamp: new Date().toISOString(),
+                    files: base64Files // Attach base64 files
                 }
             };
 
