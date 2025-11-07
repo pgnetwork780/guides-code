@@ -23,6 +23,10 @@
         .lb-collection-item img {
             width: 36px;
         }
+
+        .lb-collection-item img[alt="Most Contests Joined"] {
+            width: 104px;
+        }
     </style>
 </head>
 
@@ -134,11 +138,19 @@
     </div>
     <div id="footer"></div>
     <script>
+        // Add category images for General, Personal Best, and Medals
+        const categoryImages = {
+            "General": "img/gear.png",
+            "Personal Best": "img/graph-bar.png",
+            "Medals": "img/medals.png"
+        };
+
         let currentCategory = null;
         document.addEventListener("DOMContentLoaded", () => {
             showMainCategories();
         });
         document.getElementById("sidelid").addEventListener("click", e => e.stopPropagation());
+
         function showMainCategories() {
             currentCategory = null;
             const collectionGrid = document.getElementById("collectionGrid");
@@ -146,7 +158,11 @@
             Object.keys(collectionsData).forEach(category => {
                 const catDiv = document.createElement("div");
                 catDiv.className = "lb-collection-item main-category";
-                catDiv.innerHTML = `<div style="font-size:1.2em;font-weight:bold;">${category}</div>`;
+                let imgHtml = "";
+                if (categoryImages[category]) {
+                    imgHtml = `<img src="${categoryImages[category]}" alt="${category} icon" style="width:48px;height:48px;display:block;">`;
+                }
+                catDiv.innerHTML = `${imgHtml}`;
                 catDiv.onclick = () => showCategory(category);
                 collectionGrid.appendChild(catDiv);
             });
@@ -188,7 +204,6 @@
             window.scrollTo({ top: 400, behavior: "smooth" });
         }
 
-
         function loadLeaderboard(key) {
             const lb = leaderboards[key];
             document.getElementById("collectionTitle").innerText = lb ? lb.name + " Leaderboard" : "Select a Category";
@@ -196,12 +211,12 @@
             const leaderboardData = document.getElementById("leaderboardData");
             if (lb && lb.players.length) {
                 leaderboardData.innerHTML = lb.players.map(player => `
-            <tr>
-                <td>${player.rank}</td>
-                <td>${player.name}</td>
-                <td>${player.score}</td>
-            </tr>
-        `).join("");
+        <tr>
+            <td>${player.rank}</td>
+            <td>${player.name}</td>
+            <td>${player.score}</td>
+        </tr>
+    `).join("");
             } else {
                 leaderboardData.innerHTML = "<tr><td colspan='3'>No data available</td></tr>";
             }
