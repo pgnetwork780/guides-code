@@ -1,7 +1,7 @@
 const collectionsData = [
   {
     "name": "Zombie Slayer",
-    "image": "https://craftersmc.wiki.gg/images/8/8e/Revenant_Horror.png?b5e98d",
+    "image": "img/revenant-horror.png",
     "players": [
       { "rank": 1, "name": "SphinxWraith", "score": "50M+" },
       { "rank": 2, "name": "HeGzoStRqFe", "score": "N/A" },
@@ -17,7 +17,7 @@ const collectionsData = [
   },
   {
     "name": "Wolf Slayer",
-    "image": "https://craftersmc.wiki.gg/images/2/2e/Wolf_Spirit.png?e47d59",
+    "image": "img/fenrir-packmaster.png",
     "players": [
       { "rank": 1, "name": "SphinxWraith", "score": "10M+" },
       { "rank": 2, "name": "DueBacon2007102", "score": "10M+" },
