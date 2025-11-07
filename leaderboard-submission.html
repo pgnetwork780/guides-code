@@ -174,7 +174,7 @@
 
     <div style="margin-bottom:12px">
       <label for="screenshot">Proof Upload (Multiple Allowed) Max 5MB each</label>
-      <input id="screenshot" type="file" name="image" multiple accept="image/*,video/*" />
+      <input id="screenshot" type="file" name="image" required multiple accept="image/*,video/*" />
       <small class="note">Accepted: images or videos | Max size per file: 5MB</small>
       <div class="preview" id="previewContainer" aria-live="polite"></div>
     </div>
@@ -250,22 +250,46 @@
 
     document.getElementById('addContactBtn').onclick = () => {
       const container = document.getElementById('contactFields');
+      const wrapper = document.createElement('div');
+      wrapper.style.display = "flex";
+      wrapper.style.alignItems = "center";
+      wrapper.style.gap = "6px";
       const input = document.createElement('input');
       input.type = "text";
       input.name = "contact";
       input.placeholder = "Additional contact info";
       input.style.marginTop = "6px";
-      container.appendChild(input);
+      const removeBtn = document.createElement('button');
+      removeBtn.type = "button";
+      removeBtn.textContent = "Remove";
+      removeBtn.className = "btn";
+      removeBtn.style.marginLeft = "6px";
+      removeBtn.onclick = () => wrapper.remove();
+      wrapper.appendChild(input);
+      wrapper.appendChild(removeBtn);
+      container.appendChild(wrapper);
     };
 
     document.getElementById('addCommentBtn').onclick = () => {
       const container = document.getElementById('commentFields');
+      const wrapper = document.createElement('div');
+      wrapper.style.display = "flex";
+      wrapper.style.alignItems = "center";
+      wrapper.style.gap = "6px";
       const textarea = document.createElement('textarea');
       textarea.name = "comments";
       textarea.rows = 3;
       textarea.placeholder = "Additional comment";
       textarea.style.marginTop = "6px";
-      container.appendChild(textarea);
+      const removeBtn = document.createElement('button');
+      removeBtn.type = "button";
+      removeBtn.textContent = "Remove";
+      removeBtn.className = "btn";
+      removeBtn.style.marginLeft = "6px";
+      removeBtn.onclick = () => wrapper.remove();
+      wrapper.appendChild(textarea);
+      wrapper.appendChild(removeBtn);
+      container.appendChild(wrapper);
     };
 
     form.addEventListener('submit', async (e) => {
