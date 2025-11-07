@@ -2,7 +2,7 @@ const collectionsData = {
     "Boss Type": [
         {
             name: "Zombie",
-            image: "https://craftersmc.wiki.gg/images/8/8e/Revenant_Horror.png?b5e98d",
+            image: "img/revenant-horror.png",
             subcategories: [
                 {
                     name: "Boss Spawn",
@@ -84,7 +84,7 @@ const collectionsData = {
         },
         {
             name: "Wolf",
-            image: "https://craftersmc.wiki.gg/images/2/2e/Wolf_Spirit.png?e47d59",
+            image: "img/fenrir-packmaster.png",
             subcategories: [
                 {
                     name: "Boss Spawn",
