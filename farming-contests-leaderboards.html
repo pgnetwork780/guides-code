@@ -188,6 +188,7 @@
 
         function showLeaderboard(item) {
             document.getElementById("collectionTitle").innerText = item.name + " Leaderboard";
+            document.getElementById("collectionTitleSidelid").innerText = item.name + " Leaderboard"; // <-- Add this line
             document.getElementById("scoreHeader").innerText = "Score";
             const leaderboardData = document.getElementById("leaderboardData");
             if (item.players && item.players.length) {
@@ -207,7 +208,6 @@
         function loadLeaderboard(key) {
             const lb = leaderboards[key];
             document.getElementById("collectionTitle").innerText = lb ? lb.name + " Leaderboard" : "Select a Category";
-            document.getElementById("collectionTitleSidelid").innerText = lb ? lb.name + " Leaderboard" : "Select a Category";
             document.getElementById("scoreHeader").innerText = lb ? lb.scoreLabel : "Score";
             const leaderboardData = document.getElementById("leaderboardData");
             if (lb && lb.players.length) {
