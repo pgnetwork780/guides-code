@@ -1,7 +1,7 @@
 const collectionsData = {
     "Boss Type": [
         {
-            name: "Zombie",
+            name: "Revenant Horror",
             image: "img/revenant-horror.png",
             subcategories: [
                 {
@@ -83,7 +83,7 @@ const collectionsData = {
             ]
         },
         {
-            name: "Wolf",
+            name: "Fenrir Packmaster",
             image: "img/fenrir-packmaster.png",
             subcategories: [
                 {
