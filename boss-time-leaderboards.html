@@ -144,7 +144,7 @@
             collectionsData["Boss Type"].forEach(boss => {
                 const bossDiv = document.createElement("div");
                 bossDiv.className = "lb-collection-item main-category";
-                bossDiv.innerHTML = `<img src="${boss.image}" alt="${boss.name}" style="width:96px;">`;
+                bossDiv.innerHTML = `<img src="${boss.image}" alt="${boss.name}" style="width:94px;">`;
                 bossDiv.onclick = () => showSubcategories(boss);
                 collectionGrid.appendChild(bossDiv);
             });
@@ -166,7 +166,7 @@
             boss.subcategories.forEach(subcat => {
                 const subcatDiv = document.createElement("div");
                 subcatDiv.className = "lb-collection-item";
-                subcatDiv.innerHTML = `<img src="${subcat.image}" alt="${subcat.name}" style="width:32px;height:32px;">`;
+                subcatDiv.innerHTML = `<img src="${subcat.image}" alt="${subcat.name}" style="width:96px;">`;
                 subcatDiv.onclick = () => showSubitems(subcat);
                 collectionGrid.appendChild(subcatDiv);
             });
@@ -187,7 +187,7 @@
             subcat.subitems.forEach(subitem => {
                 const subitemDiv = document.createElement("div");
                 subitemDiv.className = "lb-collection-item";
-                subitemDiv.innerHTML = `<img src="${subitem.image}" alt="${subitem.name}" style="width:32px;height:32px;">`;
+                subitemDiv.innerHTML = `<img src="${subitem.image}" alt="${subitem.name}" style="width:96px;">`;
                 subitemDiv.onclick = () => showLeaderboard(subitem);
                 collectionGrid.appendChild(subitemDiv);
             });
