@@ -59,7 +59,6 @@
 
     <div id="footer"></div>
     <script>
-        // Add/remove contact and comment fields
         document.getElementById('addContactBtn').onclick = () => {
             const container = document.getElementById('contactFields');
             const wrapper = document.createElement('div');
@@ -117,15 +116,12 @@
             const discord = document.getElementById("discord").value.trim();
             const desc = document.getElementById("desc").value.trim();
 
-            // Collect additional contacts
             const contactInputs = document.querySelectorAll('#contactFields input[name="contact"]');
             const contacts = Array.from(contactInputs).map(input => input.value.trim()).filter(Boolean);
 
-            // Collect comments
             const commentInputs = document.querySelectorAll('#commentFields textarea[name="comments"]');
             const comments = Array.from(commentInputs).map(input => input.value.trim()).filter(Boolean);
 
-            // Collect files and convert to base64
             const fileInput = document.getElementById("file");
             const files = fileInput.files ? Array.from(fileInput.files) : [];
             const base64Files = await Promise.all(files.map(file => {
@@ -134,14 +130,13 @@
                     reader.onload = () => resolve({
                         name: file.name,
                         type: file.type,
-                        data: reader.result.split(',')[1] // Remove data:mime/type;base64,
+                        data: reader.result.split(',')[1]
                     });
                     reader.onerror = reject;
                     reader.readAsDataURL(file);
                 });
             }));
 
-            // Simplified payload structure
             const payload = {
                 type: "feedback",
                 username: "Feedback Reporter",
@@ -185,7 +180,6 @@
             }
         });
 
-        // Debug function to test the connection
         async function testConnection() {
             try {
                 const testRes = await fetch("https://webhook-manager.craftersmcguides.workers.dev/report", {
@@ -197,7 +191,6 @@
             }
         }
         
-        // Test connection on load
         testConnection();
     </script>
 </body>
