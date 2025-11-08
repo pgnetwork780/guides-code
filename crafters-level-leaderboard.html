@@ -59,24 +59,28 @@
     <div id="footer"></div>
 
     <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const leaderboardData = document.getElementById("leaderboardData");
-
-            if (typeof levelsData !== "undefined" && levelsData.length > 0) {
-                leaderboardData.innerHTML = levelsData
-                    .map(player => {
-                        const level = player.level ?? 0;
-                        return `<tr>
-                            <td>${player.rank}</td>
-                            <td>${player.name}</td>
-                            <td>${level}</td>
-                        </tr>`;
-                    })
-                    .join("");
-            } else {
-                leaderboardData.innerHTML = "<tr><td>1</td><td>???</td><td>0</td></tr>".repeat(10);
-            }
-        });
+    document.addEventListener("DOMContentLoaded", () => {
+        const leaderboardData = document.getElementById("leaderboardData");
+    
+        if (typeof levelsData !== "undefined" && levelsData.length > 0) {
+            leaderboardData.innerHTML = levelsData
+                .map(player => {
+                    const level = player.level ?? 0;
+                    const formattedName = player.name.includes("/")
+                        ? player.name.replace(/\//g, "<br>")
+                        : player.name;
+    
+                    return `<tr>
+                        <td>${player.rank}</td>
+                        <td>${formattedName}</td>
+                        <td>${level}</td>
+                    </tr>`;
+                })
+                .join("");
+        } else {
+            leaderboardData.innerHTML = "<tr><td>1</td><td>???</td><td>0</td></tr>".repeat(10);
+        }
+    });
     </script>
 </body>
 
