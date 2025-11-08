@@ -5,11 +5,11 @@ const collectionsData = {
             image: "img/revenant-horror.png",
             subcategories: [
                 {
-                    name: "Ravenant Boss Spawn",
+                    name: "Revenant Horror - Spawn Time",
                     image: "img/Boss_Spawn.png",
                     subitems: [
                         {
-                            name: "Zombie Boss Fastest Spawn Time",
+                            name: "Revenant Horror - Fastest Spawn Time",
                             image: "img/Fastest_Time.png",
                             players: [
                                 { rank: 1, name: "Unknown", score: "N/A" },
@@ -25,7 +25,7 @@ const collectionsData = {
                             ]
                         },
                         {
-                            name: "Zombie Boss Slowest Spawn Time",
+                            name: "Revenant Horror - Slowest Spawn Time",
                             image: "img/Slowest_Time.png",
                             players: [
                                 { rank: 1, name: "Unknown", score: "N/A" },
@@ -43,11 +43,11 @@ const collectionsData = {
                     ]
                 },
                 {
-                    name: "Ravenant Boss Kill",
+                    name: "Revenant Horror - Kill Time",
                     image: "img/Boss_Kill.png",
                     subitems: [
                         {
-                            name: "Zombie Boss Fastest Kill Time",
+                            name: "Revenant Horror - Fastest Kill Time",
                             image: "img/Fastest_Time.png",
                             players: [
                                 { rank: 1, name: "Unknown", score: "N/A" },
@@ -63,7 +63,7 @@ const collectionsData = {
                             ]
                         },
                         {
-                            name: "Zombie Boss Slowest Kill Time",
+                            name: "Revenant Horror - Slowest Kill Time",
                             image: "img/Slowest_Time.png",
                             players: [
                                 { rank: 1, name: "Unknown", score: "N/A" },
@@ -87,11 +87,11 @@ const collectionsData = {
             image: "img/fenrir-packmaster.png",
             subcategories: [
                 {
-                    name: "Wolf Boss Spawn",
+                    name: "Fenrir Packmaster - Spawn Time",
                     image: "img/Boss_Spawn.png",
                     subitems: [
                         {
-                            name: "Wolf Boss Fastest Spawn Time",
+                            name: "Fenrir Packmaster - Fastest Spawn Time",
                             image: "img/Fastest_Time.png",
                             players: [
                                 { rank: 1, name: "Unknown", score: "N/A" },
@@ -107,7 +107,7 @@ const collectionsData = {
                             ]
                         },
                         {
-                            name: "Wolf Boss Slowest Spawn Time",
+                            name: "Fenrir Packmaster - Slowest Spawn Time",
                             image: "img/Slowest_Time.png",
                             players: [
                                 { rank: 1, name: "Unknown", score: "N/A" },
@@ -125,11 +125,11 @@ const collectionsData = {
                     ]
                 },
                 {
-                    name: "Wolf Boss Kill",
+                    name: "Fenrir Packmaster - Kill Time",
                     image: "img/Boss_Kill.png",
                     subitems: [
                         {
-                            name: "Wolf Boss Fastest Kill Time",
+                            name: "Fenrir Packmaster - Fastest Kill Time",
                             image: "img/Fastest_Time.png",
                             players: [
                                 { rank: 1, name: "Unknown", score: "N/A" },
@@ -145,7 +145,7 @@ const collectionsData = {
                             ]
                         },
                         {
-                            name: "Wolf Boss Slowest Kill Time",
+                            name: "Fenrir Packmaster - Slowest Kill Time",
                             image: "img/Slowest_Time.png",
                             players: [
                                 { rank: 1, name: "Unknown", score: "N/A" },
