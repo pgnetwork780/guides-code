@@ -144,7 +144,7 @@
             collectionsData["Boss Type"].forEach(boss => {
                 const bossDiv = document.createElement("div");
                 bossDiv.className = "lb-collection-item main-category";
-                bossDiv.innerHTML = `<img src="${boss.image}" alt="${boss.name}" style="width:32px;height:32px;">`;
+                bossDiv.innerHTML = `<img src="${boss.image}" alt="${boss.name}" style="width:96px;">`;
                 bossDiv.onclick = () => showSubcategories(boss);
                 collectionGrid.appendChild(bossDiv);
             });
