@@ -54,7 +54,7 @@
     </div>
     <div class="gap"></div>
     <div id="sidelid" class="sidelid">
-        <h2 class="lb-h2">Farming Contests Leaderboards</h2>
+        <h2 class="lb-h2" id="collectionTitleSidelid">Select a Category</h2>
         <div class="lb-collections" id="collectionGrid"></div>
     </div>
     <div class="lb-content">
@@ -207,6 +207,7 @@
         function loadLeaderboard(key) {
             const lb = leaderboards[key];
             document.getElementById("collectionTitle").innerText = lb ? lb.name + " Leaderboard" : "Select a Category";
+            document.getElementById("collectionTitleSidelid").innerText = lb ? lb.name + " Leaderboard" : "Select a Category";
             document.getElementById("scoreHeader").innerText = lb ? lb.scoreLabel : "Score";
             const leaderboardData = document.getElementById("leaderboardData");
             if (lb && lb.players.length) {
