@@ -1,5 +1,5 @@
 const cakeData = [
-  { rank: 1, name: "Unknown", cakes: "N/A" },
+  { rank: 1, name: "MythicalPanda30", cakes: "172" },
   { rank: 2, name: "Unknown", cakes: "N/A" },
   { rank: 3, name: "Unknown", cakes: "N/A" },
   { rank: 4, name: "Unknown", cakes: "N/A" },
