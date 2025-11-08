@@ -5,11 +5,11 @@ const collectionsData = {
             image: "img/revenant-horror.png",
             subcategories: [
                 {
-                    name: "Boss Spawn",
+                    name: "Ravenant Boss Spawn",
                     image: "img/Boss_Spawn.png",
                     subitems: [
                         {
-                            name: "Fastest Time",
+                            name: "Zombie Boss Fastest Spawn Time",
                             image: "img/Fastest_Time.png",
                             players: [
                                 { rank: 1, name: "Unknown", score: "N/A" },
@@ -25,7 +25,7 @@ const collectionsData = {
                             ]
                         },
                         {
-                            name: "Slowest Time",
+                            name: "Zombie Boss Slowest Spawn Time",
                             image: "img/Slowest_Time.png",
                             players: [
                                 { rank: 1, name: "Unknown", score: "N/A" },
@@ -43,11 +43,11 @@ const collectionsData = {
                     ]
                 },
                 {
-                    name: "Boss Kill",
+                    name: "Ravenant Boss Kill",
                     image: "img/Boss_Kill.png",
                     subitems: [
                         {
-                            name: "Fastest Time",
+                            name: "Zombie Boss Fastest Kill Time",
                             image: "img/Fastest_Time.png",
                             players: [
                                 { rank: 1, name: "Unknown", score: "N/A" },
@@ -63,7 +63,7 @@ const collectionsData = {
                             ]
                         },
                         {
-                            name: "Slowest Time",
+                            name: "Zombie Boss Slowest Kill Time",
                             image: "img/Slowest_Time.png",
                             players: [
                                 { rank: 1, name: "Unknown", score: "N/A" },
@@ -87,11 +87,11 @@ const collectionsData = {
             image: "img/fenrir-packmaster.png",
             subcategories: [
                 {
-                    name: "Boss Spawn",
+                    name: "Wolf Boss Spawn",
                     image: "img/Boss_Spawn.png",
                     subitems: [
                         {
-                            name: "Fastest Time",
+                            name: "Wolf Boss Fastest Spawn Time",
                             image: "img/Fastest_Time.png",
                             players: [
                                 { rank: 1, name: "Unknown", score: "N/A" },
@@ -107,7 +107,7 @@ const collectionsData = {
                             ]
                         },
                         {
-                            name: "Slowest Time",
+                            name: "Wolf Boss Slowest Spawn Time",
                             image: "img/Slowest_Time.png",
                             players: [
                                 { rank: 1, name: "Unknown", score: "N/A" },
@@ -125,11 +125,11 @@ const collectionsData = {
                     ]
                 },
                 {
-                    name: "Boss Kill",
+                    name: "Wolf Boss Kill",
                     image: "img/Boss_Kill.png",
                     subitems: [
                         {
-                            name: "Fastest Time",
+                            name: "Wolf Boss Fastest Kill Time",
                             image: "img/Fastest_Time.png",
                             players: [
                                 { rank: 1, name: "Unknown", score: "N/A" },
@@ -145,7 +145,7 @@ const collectionsData = {
                             ]
                         },
                         {
-                            name: "Slowest Time",
+                            name: "Wolf Boss Slowest Kill Time",
                             image: "img/Slowest_Time.png",
                             players: [
                                 { rank: 1, name: "Unknown", score: "N/A" },
