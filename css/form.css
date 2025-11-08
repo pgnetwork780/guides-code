@@ -109,10 +109,11 @@
   cursor: pointer;
   transition: all 0.2s;
   outline: 2px solid #2b6;
+  margin: 0 auto;
 }
 
 #submitBtn:hover {
-  background: #3b5aff33;
+  background: #1a3;
 }
 
 .panel {
