@@ -127,90 +127,109 @@
         </div>
     </div>
     <div id="footer"></div>
-    <script>
-        let currentBoss = null;
-        let currentSubcategory = null;
+<script>
+    let currentBoss = null;
+    let currentSubcategory = null;
 
-        document.addEventListener("DOMContentLoaded", () => {
-            showBossTypes();
+    document.addEventListener("DOMContentLoaded", () => {
+        showBossTypes();
+    });
+    document.getElementById("sidelid").addEventListener("click", e => e.stopPropagation());
+
+    function showBossTypes() {
+        currentBoss = null;
+        currentSubcategory = null;
+        const collectionGrid = document.getElementById("collectionGrid");
+        collectionGrid.innerHTML = "";
+
+        document.querySelector("#sidelid h2.lb-h2").innerText = "Boss Time Leaderboards";
+        document.getElementById("collectionTitle").innerText = "Select a Category";
+
+        collectionsData["Boss Type"].forEach(boss => {
+            const bossDiv = document.createElement("div");
+            bossDiv.className = "lb-collection-item main-category";
+            bossDiv.innerHTML = `<img src="${boss.image}" alt="${boss.name}" style="width:94px;">`;
+            bossDiv.onclick = () => showSubcategories(boss);
+            collectionGrid.appendChild(bossDiv);
         });
-        document.getElementById("sidelid").addEventListener("click", e => e.stopPropagation());
+    }
 
-        function showBossTypes() {
-            currentBoss = null;
-            currentSubcategory = null;
-            const collectionGrid = document.getElementById("collectionGrid");
-            collectionGrid.innerHTML = "";
-            collectionsData["Boss Type"].forEach(boss => {
-                const bossDiv = document.createElement("div");
-                bossDiv.className = "lb-collection-item main-category";
-                bossDiv.innerHTML = `<img src="${boss.image}" alt="${boss.name}" style="width:94px;">`;
-                bossDiv.onclick = () => showSubcategories(boss);
-                collectionGrid.appendChild(bossDiv);
-            });
+    function showSubcategories(boss) {
+        currentBoss = boss;
+        currentSubcategory = null;
+        const collectionGrid = document.getElementById("collectionGrid");
+        collectionGrid.innerHTML = "";
+
+        document.querySelector("#sidelid h2.lb-h2").innerText = `${boss.name} Leaderboards`;
+        document.getElementById("collectionTitle").innerText = `${boss.name} Leaderboards`;
+
+        const backBtn = document.createElement("div");
+        backBtn.className = "lb-collection-item back-btn";
+        backBtn.innerHTML = "← Back";
+        backBtn.onclick = showBossTypes;
+        collectionGrid.appendChild(backBtn);
+
+        boss.subcategories.forEach(subcat => {
+            const subcatDiv = document.createElement("div");
+            subcatDiv.className = "lb-collection-item";
+            subcatDiv.innerHTML = `<img src="${subcat.image}" alt="${subcat.name}" style="width:96px;">`;
+            subcatDiv.onclick = () => showSubitems(subcat);
+            collectionGrid.appendChild(subcatDiv);
+        });
+    }
+
+    function showSubitems(subcat) {
+        currentSubcategory = subcat;
+        const collectionGrid = document.getElementById("collectionGrid");
+        collectionGrid.innerHTML = "";
+
+        document.querySelector("#sidelid h2.lb-h2").innerText = `${subcat.name} Leaderboards`;
+        document.getElementById("collectionTitle").innerText = `${subcat.name} Leaderboards`;
+
+        const backBtn = document.createElement("div");
+        backBtn.className = "lb-collection-item back-btn";
+        backBtn.innerHTML = "← Back";
+        backBtn.onclick = () => showSubcategories(currentBoss);
+        collectionGrid.appendChild(backBtn);
+
+        subcat.subitems.forEach(subitem => {
+            const label = formatSubitemName(subitem.name);
+            const subitemDiv = document.createElement("div");
+            subitemDiv.className = "lb-collection-item";
+            subitemDiv.innerHTML = `<img src="${subitem.image}" alt="${label}" title="${label}" style="width:96px;">`;
+            subitemDiv.onclick = () => showLeaderboard(subitem);
+            collectionGrid.appendChild(subitemDiv);
+        });
+    }
+
+    function showLeaderboard(item) {
+        const label = formatSubitemName(item.name);
+        document.querySelector("#sidelid h2.lb-h2").innerText = `${label} Leaderboard`;
+        document.getElementById("collectionTitle").innerText = `${label} Leaderboard`;
+        document.getElementById("scoreHeader").innerText = "Score";
+
+        const leaderboardData = document.getElementById("leaderboardData");
+        if (item.players && item.players.length) {
+            leaderboardData.innerHTML = item.players.map(player => `
+                <tr>
+                    <td>${player.rank}</td>
+                    <td>${player.name}</td>
+                    <td>${player.score}</td>
+                </tr>
+            `).join("");
+        } else {
+            leaderboardData.innerHTML = "<tr><td colspan='3'>No data available</td></tr>";
         }
+        window.scrollTo({ top: 350, behavior: "smooth" });
+    }
 
-        function showSubcategories(boss) {
-            currentBoss = boss;
-            currentSubcategory = null;
-            const collectionGrid = document.getElementById("collectionGrid");
-            collectionGrid.innerHTML = "";
-
-            // Back button
-            const backBtn = document.createElement("div");
-            backBtn.className = "lb-collection-item back-btn";
-            backBtn.innerHTML = "← Back";
-            backBtn.onclick = showBossTypes;
-            collectionGrid.appendChild(backBtn);
-
-            boss.subcategories.forEach(subcat => {
-                const subcatDiv = document.createElement("div");
-                subcatDiv.className = "lb-collection-item";
-                subcatDiv.innerHTML = `<img src="${subcat.image}" alt="${subcat.name}" style="width:96px;">`;
-                subcatDiv.onclick = () => showSubitems(subcat);
-                collectionGrid.appendChild(subcatDiv);
-            });
-        }
-
-        function showSubitems(subcat) {
-            currentSubcategory = subcat;
-            const collectionGrid = document.getElementById("collectionGrid");
-            collectionGrid.innerHTML = "";
-
-            // Back button
-            const backBtn = document.createElement("div");
-            backBtn.className = "lb-collection-item back-btn";
-            backBtn.innerHTML = "← Back";
-            backBtn.onclick = () => showSubcategories(currentBoss);
-            collectionGrid.appendChild(backBtn);
-
-            subcat.subitems.forEach(subitem => {
-                const subitemDiv = document.createElement("div");
-                subitemDiv.className = "lb-collection-item";
-                subitemDiv.innerHTML = `<img src="${subitem.image}" alt="${subitem.name}" style="width:96px;">`;
-                subitemDiv.onclick = () => showLeaderboard(subitem);
-                collectionGrid.appendChild(subitemDiv);
-            });
-        }
-
-        function showLeaderboard(item) {
-            document.getElementById("collectionTitle").innerText = item.name + " Leaderboard";
-            document.getElementById("scoreHeader").innerText = "Score";
-            const leaderboardData = document.getElementById("leaderboardData");
-            if (item.players && item.players.length) {
-                leaderboardData.innerHTML = item.players.map(player => `
-                    <tr>
-                        <td>${player.rank}</td>
-                        <td>${player.name}</td>
-                        <td>${player.score}</td>
-                    </tr>
-                `).join("");
-            } else {
-                leaderboardData.innerHTML = "<tr><td colspan='3'>No data available</td></tr>";
-            }
-            window.scrollTo({ top: 350, behavior: "smooth" });
-        }
-    </script>
+    function formatSubitemName(name) {
+        const lower = name.toLowerCase();
+        if (lower.includes("1")) return "Fastest";
+        if (lower.includes("2")) return "Slowest";
+        return name;
+    }
+</script>
 </body>
 
 </html>
