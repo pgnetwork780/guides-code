@@ -100,7 +100,7 @@
 
 #submitBtn {
   width: 100%;
-  background: #2b4dffc7;
+  background: #2b4;
   color: #fff;
   font-weight: bold;
   font-size: 18px;
@@ -108,7 +108,7 @@
   border-radius: 6px;
   cursor: pointer;
   transition: all 0.2s;
-  outline: 2px solid #001db3;
+  outline: 2px solid #2b6;
 }
 
 #submitBtn:hover {
@@ -120,9 +120,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0.9);
-  background: rgba(0, 0, 0, 0.9);
-  color: lime;
-  border: 1px solid lime;
+  background: #2c2c2c;
+  color: white;
+  border: 1px solid lightgray;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
