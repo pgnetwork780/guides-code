@@ -1,7 +1,7 @@
 const collectionsData = {
     "Medals": [
         {
-            name: "Bronze",
+            name: "Medal - Bronze",
             image: "img/Bronze_Medal.png",
             players: [
                 { rank: 1, name: "Unknown", score: "N/A" },
@@ -17,7 +17,7 @@ const collectionsData = {
             ]
         },
         {
-            name: "Silver",
+            name: "Medal - Silver",
             image: "img/Silver_Medal.png",
             players: [
                 { rank: 1, name: "Unknown", score: "N/A" },
@@ -33,7 +33,7 @@ const collectionsData = {
             ]
         },
         {
-            name: "Gold",
+            name: "Medal - Gold",
             image: "img/Gold_Medal.png",
             players: [
                 { rank: 1, name: "Unknown", score: "N/A" },
@@ -67,9 +67,9 @@ const collectionsData = {
             ]
         }
     ],
-    "Personal Best": [
+    "Personal Bests": [
         {
-            name: "Wheat",
+            name: "Personal Best - Wheat",
             image: "img/Wheat.webp",
             players: [
                 { rank: 1, name: "Unknown", score: "N/A" },
@@ -85,7 +85,7 @@ const collectionsData = {
             ]
         },
         {
-            name: "Carrot",
+            name: "Personal Best - Carrot",
             image: "img/Carrot.webp",
             players: [
                 { rank: 1, name: "Unknown", score: "N/A" },
@@ -101,7 +101,7 @@ const collectionsData = {
             ]
         },
         {
-            name: "Potato",
+            name: "Personal Best - Potato",
             image: "img/Potato.webp",
             players: [
                 { rank: 1, name: "Unknown", score: "N/A" },
@@ -117,7 +117,7 @@ const collectionsData = {
             ]
         },
         {
-            name: "Sugar Cane",
+            name: "Personal Best - Sugar Cane",
             image: "img/Sugar_Cane.webp",
             players: [
                 { rank: 1, name: "Unknown", score: "N/A" },
@@ -133,7 +133,7 @@ const collectionsData = {
             ]
         },
         {
-            name: "Cactus",
+            name: "Personal Best - Cactus",
             image: "img/Cactus.webp",
             players: [
                 { rank: 1, name: "Unknown", score: "N/A" },
@@ -149,7 +149,7 @@ const collectionsData = {
             ]
         },
         {
-            name: "Pumpkin",
+            name: "Personal Best - Pumpkin",
             image: "img/Pumpkin.webp",
             players: [
                 { rank: 1, name: "Unknown", score: "N/A" },
@@ -165,7 +165,7 @@ const collectionsData = {
             ]
         },
         {
-            name: "Melon",
+            name: "Personal Best - Melon",
             image: "img/Melon_Block.png",
             players: [
                 { rank: 1, name: "Unknown", score: "N/A" },
@@ -181,7 +181,7 @@ const collectionsData = {
             ]
         },
         {
-            name: "Mushroom",
+            name: "Personal Best - Mushroom",
             image: "img/Mushroom.gif",
             players: [
                 { rank: 1, name: "Unknown", score: "N/A" },
@@ -197,7 +197,7 @@ const collectionsData = {
             ]
         },
         {
-            name: "Cocoa Beans",
+            name: "Personal Best - Cocoa Beans",
             image: "img/Cocoa_Beans.webp",
             players: [
                 { rank: 1, name: "Unknown", score: "N/A" },
