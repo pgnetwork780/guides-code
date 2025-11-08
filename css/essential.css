@@ -748,7 +748,7 @@ button,
     cursor: pointer;
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
-    background: rgb(2, 2, 2, 0.4);
+    background: rgb(2, 2, 2, 0.1);
     border-radius: 5px;
     outline: 2px solid white;
     margin: 5px;
@@ -757,7 +757,7 @@ button,
 
 button:hover,
 .btn:hover {
-    background-color: rgb(2, 2, 2, 0.1);
+    background-color: rgb(2, 2, 2, 0.4);
     color: #e8e8e8;
 }
 
