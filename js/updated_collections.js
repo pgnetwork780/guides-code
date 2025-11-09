@@ -2206,18 +2206,18 @@ const collectionsData = {
                 },
                 {
                     "rank": 3,
+                    "name": "GRAVITY8303",
+                    "score": "34.2M+"
+                },
+                {
+                    "rank": 4,
                     "name": "SphinxWraith",
                     "score": "N/A"
                 },
                 {
-                    "rank": 4,
+                    "rank": 5,
                     "name": "Iceberg899",
                     "score": "N/A"
-                },
-                {
-                    "rank": 5,
-                    "name": "GRAVITY8303",
-                    "score": "34.2M+"
                 },
                 {
                     "rank": 6,
