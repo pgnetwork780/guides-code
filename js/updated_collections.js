@@ -873,8 +873,8 @@ const collectionsData = {
                 },
                 {
                     "rank": 6,
-                    "name": "Unknown",
-                    "score": "N/A"
+                    "name": "GRAVITY8303",
+                    "score": "12.1M+"
                 },
                 {
                     "rank": 7,
@@ -2365,7 +2365,7 @@ const collectionsData = {
                 {
                     "rank": 1,
                     "name": "Rehan2038",
-                    "score": "41.4M+"
+                    "score": "64.6M+"
                 },
                 {
                     "rank": 2,
