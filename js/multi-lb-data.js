@@ -8,20 +8,20 @@ const achievementsData = [
     { rank: 4, name: "Dharmaveer31", achievements: "57" },
     { rank: 5, name: "Perry3338", achievements: "51" },
     { rank: 6, name: "TGJASSIYT", achievements: "49" },
-    { rank: 7, name: "Kautilya3072", achievements: "46" },
-    { rank: 8, name: "Darkshadow52195", achievements: "41" },
-    { rank: 9, name: "Jeremy2075", achievements: "33" },
-    { rank: 10, name: "SAAD_KING_07726", achievements: "23" }
+    { rank: 7, name: "Rehan2038", achievements: "48" },
+    { rank: 8, name: "Kautilya3072", achievements: "46" },
+    { rank: 9, name: "Darkshadow52195", achievements: "41" },
+    { rank: 10, name: "Jeremy2075", achievements: "33" }
 ];
 // Avg Skill
 const skillData = [
   { rank: 1, name: "SphinxWraith/David_R06", level: "51.7" },
   { rank: 2, name: "Moerderfisch", level: "50.7" },
-  { rank: 3, name: "AndyGamer024", level: "50" },
+  { rank: 3, name: "AndyGamer024/GRAVITY8303", level: "50" },
   { rank: 4, name: "Itzomkar1232891", level: "47.2" },
   { rank: 5, name: "DRONZAR_OP", level: "46.2" },
   { rank: 6, name: "Kg_lcky_01", level: "46" },
-  { rank: 7, name: "Rehan2038", level: "41" },
+  { rank: 7, name: "Rehan2038", level: "42.3" },
   { rank: 8, name: "Perry3338", level: "39.5" },
   { rank: 9, name: "Kautilya3072", level: "36.2" },
   { rank: 10, name: "Jatinsaini900", level: "35.7" }
@@ -60,9 +60,9 @@ const levelsData = [
   { rank: 4, name: "Jeremy2075/Darkshadow52195", level: "40" },
   { rank: 5, name: "Dharmaveer31", level: "39" },
   { rank: 6, name: "MythicalPanda30", level: "27" },
-  { rank: 7, name: "Kautilya3072", level: "16" },
-  { rank: 8, name: "SAAD_KING_07726", level: "15" },
-  { rank: 9, name: "Unknown", level: "N/A" },
+  { rank: 7, name: "Rehan2038", level: "22" },
+  { rank: 8, name: "Kautilya3072", level: "16" },
+  { rank: 9, name: "SAAD_KING_07726", level: "15" },
   { rank: 10, name: "Unknown", level: "N/A" }
 ];
 // Playtime
