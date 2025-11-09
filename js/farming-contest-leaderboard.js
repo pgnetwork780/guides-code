@@ -133,11 +133,11 @@ const collectionsData = {
             ]
         },
         {
-            name: "Personal Best - Potato",
-            image: "img/Potato.webp",
+            name: "Personal Best - Mushroom",
+            image: "img/Mushroom.gif",
             players: [
-                { rank: 1, name: "AYUSHAKS30", score: "1.5M+" },
-                { rank: 2, name: "hhhuuuhh", score: "560k+" },
+                { rank: 1, name: "hhhuuuhh", score: "39k+" },
+                { rank: 2, name: "Unknown", score: "N/A" },
                 { rank: 3, name: "Unknown", score: "N/A" },
                 { rank: 4, name: "Unknown", score: "N/A" },
                 { rank: 5, name: "Unknown", score: "N/A" },
@@ -165,11 +165,11 @@ const collectionsData = {
             ]
         },
         {
-            name: "Personal Best - Cactus",
-            image: "img/Cactus.webp",
+            name: "Personal Best - Potato",
+            image: "img/Potato.webp",
             players: [
-                { rank: 1, name: "hhhuuuhh", score: "192k+" },
-                { rank: 2, name: "Unknown", score: "N/A" },
+                { rank: 1, name: "AYUSHAKS30", score: "1.5M+" },
+                { rank: 2, name: "hhhuuuhh", score: "560k+" },
                 { rank: 3, name: "Unknown", score: "N/A" },
                 { rank: 4, name: "Unknown", score: "N/A" },
                 { rank: 5, name: "Unknown", score: "N/A" },
@@ -197,10 +197,10 @@ const collectionsData = {
             ]
         },
         {
-            name: "Personal Best - Mushroom",
-            image: "img/Mushroom.gif",
+            name: "Personal Best - Cactus",
+            image: "img/Cactus.webp",
             players: [
-                { rank: 1, name: "hhhuuuhh", score: "39k+" },
+                { rank: 1, name: "hhhuuuhh", score: "192k+" },
                 { rank: 2, name: "Unknown", score: "N/A" },
                 { rank: 3, name: "Unknown", score: "N/A" },
                 { rank: 4, name: "Unknown", score: "N/A" },
