@@ -72,7 +72,7 @@ const collectionsData = {
             name: "Personal Best - Wheat",
             image: "img/Wheat.webp",
             players: [
-                { rank: 1, name: "Unknown", score: "N/A" },
+                { rank: 1, name: "hhhuuuhh", score: "180k+" },
                 { rank: 2, name: "Unknown", score: "N/A" },
                 { rank: 3, name: "Unknown", score: "N/A" },
                 { rank: 4, name: "Unknown", score: "N/A" },
@@ -88,71 +88,7 @@ const collectionsData = {
             name: "Personal Best - Carrot",
             image: "img/Carrot.webp",
             players: [
-                { rank: 1, name: "Unknown", score: "N/A" },
-                { rank: 2, name: "Unknown", score: "N/A" },
-                { rank: 3, name: "Unknown", score: "N/A" },
-                { rank: 4, name: "Unknown", score: "N/A" },
-                { rank: 5, name: "Unknown", score: "N/A" },
-                { rank: 6, name: "Unknown", score: "N/A" },
-                { rank: 7, name: "Unknown", score: "N/A" },
-                { rank: 8, name: "Unknown", score: "N/A" },
-                { rank: 9, name: "Unknown", score: "N/A" },
-                { rank: 10, name: "Unknown", score: "N/A" }
-            ]
-        },
-        {
-            name: "Personal Best - Potato",
-            image: "img/Potato.webp",
-            players: [
-                { rank: 1, name: "Unknown", score: "N/A" },
-                { rank: 2, name: "Unknown", score: "N/A" },
-                { rank: 3, name: "Unknown", score: "N/A" },
-                { rank: 4, name: "Unknown", score: "N/A" },
-                { rank: 5, name: "Unknown", score: "N/A" },
-                { rank: 6, name: "Unknown", score: "N/A" },
-                { rank: 7, name: "Unknown", score: "N/A" },
-                { rank: 8, name: "Unknown", score: "N/A" },
-                { rank: 9, name: "Unknown", score: "N/A" },
-                { rank: 10, name: "Unknown", score: "N/A" }
-            ]
-        },
-        {
-            name: "Personal Best - Sugar Cane",
-            image: "img/Sugar_Cane.webp",
-            players: [
-                { rank: 1, name: "Unknown", score: "N/A" },
-                { rank: 2, name: "Unknown", score: "N/A" },
-                { rank: 3, name: "Unknown", score: "N/A" },
-                { rank: 4, name: "Unknown", score: "N/A" },
-                { rank: 5, name: "Unknown", score: "N/A" },
-                { rank: 6, name: "Unknown", score: "N/A" },
-                { rank: 7, name: "Unknown", score: "N/A" },
-                { rank: 8, name: "Unknown", score: "N/A" },
-                { rank: 9, name: "Unknown", score: "N/A" },
-                { rank: 10, name: "Unknown", score: "N/A" }
-            ]
-        },
-        {
-            name: "Personal Best - Cactus",
-            image: "img/Cactus.webp",
-            players: [
-                { rank: 1, name: "Unknown", score: "N/A" },
-                { rank: 2, name: "Unknown", score: "N/A" },
-                { rank: 3, name: "Unknown", score: "N/A" },
-                { rank: 4, name: "Unknown", score: "N/A" },
-                { rank: 5, name: "Unknown", score: "N/A" },
-                { rank: 6, name: "Unknown", score: "N/A" },
-                { rank: 7, name: "Unknown", score: "N/A" },
-                { rank: 8, name: "Unknown", score: "N/A" },
-                { rank: 9, name: "Unknown", score: "N/A" },
-                { rank: 10, name: "Unknown", score: "N/A" }
-            ]
-        },
-        {
-            name: "Personal Best - Pumpkin",
-            image: "img/Pumpkin.webp",
-            players: [
-                { rank: 1, name: "Unknown", score: "N/A" },
+                { rank: 1, name: "hhhuuuhh", score: "553k+" },
                 { rank: 2, name: "Unknown", score: "N/A" },
                 { rank: 3, name: "Unknown", score: "N/A" },
                 { rank: 4, name: "Unknown", score: "N/A" },
@@ -168,24 +104,8 @@ const collectionsData = {
             name: "Personal Best - Melon",
             image: "img/Melon_Block.png",
             players: [
-                { rank: 1, name: "Unknown", score: "N/A" },
-                { rank: 2, name: "Unknown", score: "N/A" },
-                { rank: 3, name: "Unknown", score: "N/A" },
-                { rank: 4, name: "Unknown", score: "N/A" },
-                { rank: 5, name: "Unknown", score: "N/A" },
-                { rank: 6, name: "Unknown", score: "N/A" },
-                { rank: 7, name: "Unknown", score: "N/A" },
-                { rank: 8, name: "Unknown", score: "N/A" },
-                { rank: 9, name: "Unknown", score: "N/A" },
-                { rank: 10, name: "Unknown", score: "N/A" }
-            ]
-        },
-        {
-            name: "Personal Best - Mushroom",
-            image: "img/Mushroom.gif",
-            players: [
-                { rank: 1, name: "Unknown", score: "N/A" },
-                { rank: 2, name: "Unknown", score: "N/A" },
+                { rank: 1, name: "AYUSHAKS30", score: "3.7M+" },
+                { rank: 2, name: "hhhuuuhh", score: "2M+" },
                 { rank: 3, name: "Unknown", score: "N/A" },
                 { rank: 4, name: "Unknown", score: "N/A" },
                 { rank: 5, name: "Unknown", score: "N/A" },
@@ -200,7 +120,103 @@ const collectionsData = {
             name: "Personal Best - Cocoa Beans",
             image: "img/Cocoa_Beans.webp",
             players: [
-                { rank: 1, name: "Unknown", score: "N/A" },
+                { rank: 1, name: "hhhuuuhh", score: "183k+" },
+                { rank: 2, name: "Unknown", score: "N/A" },
+                { rank: 3, name: "Unknown", score: "N/A" },
+                { rank: 4, name: "Unknown", score: "N/A" },
+                { rank: 5, name: "Unknown", score: "N/A" },
+                { rank: 6, name: "Unknown", score: "N/A" },
+                { rank: 7, name: "Unknown", score: "N/A" },
+                { rank: 8, name: "Unknown", score: "N/A" },
+                { rank: 9, name: "Unknown", score: "N/A" },
+                { rank: 10, name: "Unknown", score: "N/A" }
+            ]
+        },
+        {
+            name: "Personal Best - Potato",
+            image: "img/Potato.webp",
+            players: [
+                { rank: 1, name: "AYUSHAKS30", score: "1.5M+" },
+                { rank: 2, name: "hhhuuuhh", score: "560k+" },
+                { rank: 3, name: "Unknown", score: "N/A" },
+                { rank: 4, name: "Unknown", score: "N/A" },
+                { rank: 5, name: "Unknown", score: "N/A" },
+                { rank: 6, name: "Unknown", score: "N/A" },
+                { rank: 7, name: "Unknown", score: "N/A" },
+                { rank: 8, name: "Unknown", score: "N/A" },
+                { rank: 9, name: "Unknown", score: "N/A" },
+                { rank: 10, name: "Unknown", score: "N/A" }
+            ]
+        },
+        {
+            name: "Personal Best - Sugar Cane",
+            image: "img/Sugar_Cane.webp",
+            players: [
+                { rank: 1, name: "AYUSHAKS30", score: "712K+" },
+                { rank: 2, name: "hhhuuuhh", score: "647k+" },
+                { rank: 3, name: "Unknown", score: "N/A" },
+                { rank: 4, name: "Unknown", score: "N/A" },
+                { rank: 5, name: "Unknown", score: "N/A" },
+                { rank: 6, name: "Unknown", score: "N/A" },
+                { rank: 7, name: "Unknown", score: "N/A" },
+                { rank: 8, name: "Unknown", score: "N/A" },
+                { rank: 9, name: "Unknown", score: "N/A" },
+                { rank: 10, name: "Unknown", score: "N/A" }
+            ]
+        },
+        {
+            name: "Personal Best - Cactus",
+            image: "img/Cactus.webp",
+            players: [
+                { rank: 1, name: "hhhuuuhh", score: "192k+" },
+                { rank: 2, name: "Unknown", score: "N/A" },
+                { rank: 3, name: "Unknown", score: "N/A" },
+                { rank: 4, name: "Unknown", score: "N/A" },
+                { rank: 5, name: "Unknown", score: "N/A" },
+                { rank: 6, name: "Unknown", score: "N/A" },
+                { rank: 7, name: "Unknown", score: "N/A" },
+                { rank: 8, name: "Unknown", score: "N/A" },
+                { rank: 9, name: "Unknown", score: "N/A" },
+                { rank: 10, name: "Unknown", score: "N/A" }
+            ]
+        },
+        {
+            name: "Personal Best - Pumpkin",
+            image: "img/Pumpkin.webp",
+            players: [
+                { rank: 1, name: "AYUSHAKS30", score: "559k+" },
+                { rank: 2, name: "hhhuuuhh", score: "308k+" },
+                { rank: 3, name: "Unknown", score: "N/A" },
+                { rank: 4, name: "Unknown", score: "N/A" },
+                { rank: 5, name: "Unknown", score: "N/A" },
+                { rank: 6, name: "Unknown", score: "N/A" },
+                { rank: 7, name: "Unknown", score: "N/A" },
+                { rank: 8, name: "Unknown", score: "N/A" },
+                { rank: 9, name: "Unknown", score: "N/A" },
+                { rank: 10, name: "Unknown", score: "N/A" }
+            ]
+        },
+        {
+            name: "Personal Best - Mushroom",
+            image: "img/Mushroom.gif",
+            players: [
+                { rank: 1, name: "hhhuuuhh", score: "39k+" },
+                { rank: 2, name: "Unknown", score: "N/A" },
+                { rank: 3, name: "Unknown", score: "N/A" },
+                { rank: 4, name: "Unknown", score: "N/A" },
+                { rank: 5, name: "Unknown", score: "N/A" },
+                { rank: 6, name: "Unknown", score: "N/A" },
+                { rank: 7, name: "Unknown", score: "N/A" },
+                { rank: 8, name: "Unknown", score: "N/A" },
+                { rank: 9, name: "Unknown", score: "N/A" },
+                { rank: 10, name: "Unknown", score: "N/A" }
+            ]
+        },
+        {
+            name: "Personal Best - Beetroot",
+            image: "img/Beetroot.webp",
+            players: [
+                { rank: 1, name: "AYUSHAKS30", score: "1M+" },
                 { rank: 2, name: "Unknown", score: "N/A" },
                 { rank: 3, name: "Unknown", score: "N/A" },
                 { rank: 4, name: "Unknown", score: "N/A" },
