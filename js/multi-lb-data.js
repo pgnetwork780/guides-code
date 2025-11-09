@@ -1,3 +1,5 @@
+// Data Here: Achievements, Avg Skill, Cakes, Gems, Crafters Level, Playtime, Slayers
+// Not here: Collections, Farming Contests, Boss Time (Or any other with 200-300 lines data)
 // Achievements
 const achievementsData = [
     { rank: 1, name: "SphinxWraith", achievements: "70" },
