@@ -208,7 +208,8 @@
   <div id="footer"></div>
 
   <script>
-    const WEBHOOK_URL = 'https://webhook-manager.craftersmcguides.workers.dev/leaderboard';
+    const WORKER_URL = '/api/leaderboard-submission'; // Now points to your Pages Function
+
     const maxFileSize = 5 * 1024 * 1024;
     const form = document.getElementById('submissionForm');
     const screenshotInput = document.getElementById('screenshot');
@@ -299,41 +300,35 @@
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
       status.textContent = '';
-
-      const playerName = document.getElementById('playerName').value.trim();
-      const selectedLB = [...document.querySelectorAll('input[name="leaderboards"]:checked')].map(cb => cb.value);
-      const contacts = [...document.querySelectorAll('input[name="contact"]')].map(i => i.value.trim()).filter(v => v);
-      const comments = [...document.querySelectorAll('textarea[name="comments"]')].map(t => t.value.trim()).filter(v => v);
-
-      if (!playerName) return status.textContent = 'Player name is required.';
-      if (selectedLB.length === 0) return status.textContent = 'Select at least one leaderboard.';
-
       submitBtn.disabled = true;
-      spinner.style.display = 'inline-block';
+      spinner.style.display = 'inline';
 
-      const formData = new FormData();
-      formData.append("playerName", playerName);
-      formData.append("leaderboards", selectedLB.join(","));
-      if (contacts.length) formData.append("contact", contacts.join("\n"));
-      if (comments.length) formData.append("notes", comments.join("\n"));
-
-      // Attach files
-      for (const file of screenshotInput.files) {
-        formData.append("image", file, file.name);
+      const formData = new FormData(form);
+      for (const file of uploadedFiles) {
+        formData.append('image', file);
       }
 
       try {
-        const res = await fetch(WEBHOOK_URL, {
+        const res = await fetch(WORKER_URL, {
           method: 'POST',
           body: formData
+          // No auth header needed!
         });
-
-        status.textContent = res.ok ? 'Submission successful.' : 'Submission failed.';
-        if (res.ok) form.reset(), previewContainer.innerHTML = '';
-      } finally {
-        submitBtn.disabled = false;
-        spinner.style.display = 'none';
+        if (!res.ok) {
+          status.textContent = 'Submission failed. Please try again.';
+          status.style.color = 'red';
+        } else {
+          status.textContent = 'Submission successful!';
+          status.style.color = 'green';
+          form.reset();
+          previewContainer.innerHTML = '';
+        }
+      } catch (err) {
+        status.textContent = 'Network error. Please try again.';
+        status.style.color = 'red';
       }
+      submitBtn.disabled = false;
+      spinner.style.display = 'none';
     });
   </script>
 </body>
