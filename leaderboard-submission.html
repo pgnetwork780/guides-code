@@ -305,17 +305,20 @@
       submitBtn.disabled = true;
       spinner.style.display = 'inline';
 
+      // Create FormData from form
+      const formData = new FormData(form);
+
+      // Append uploaded files
       for (const file of uploadedFiles) {
         formData.append('image', file);
       }
-
 
       try {
         const res = await fetch(WORKER_URL, {
           method: 'POST',
           body: formData
-          // No auth header needed!
         });
+
         if (!res.ok) {
           status.textContent = 'Submission failed. Please try again.';
           status.style.color = 'red';
@@ -324,11 +327,14 @@
           status.style.color = 'green';
           form.reset();
           previewContainer.innerHTML = '';
+          uploadedFiles = [];
         }
+
       } catch (err) {
         status.textContent = 'Network error. Please try again.';
         status.style.color = 'red';
       }
+
       submitBtn.disabled = false;
       spinner.style.display = 'none';
     });
