@@ -1,7 +1,8 @@
 export async function onRequestPost(context) {
   const incomingFormData = await context.request.formData();
 
-  const WORKER_URL = "https://https://webhook-manager.craftersmcguides.workers.dev/leaderboard";
+  // FIX: Remove duplicate https://
+  const WORKER_URL = "https://webhook-manager.craftersmcguides.workers.dev/leaderboard";
 
   const response = await fetch(WORKER_URL, {
     method: "POST",
