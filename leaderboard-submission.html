@@ -171,7 +171,8 @@
         <label><input type="checkbox" name="leaderboards" value="Crafters Lvl"> Crafters Level Leaderboard</label>
         <label><input type="checkbox" name="leaderboards" value="Boss Time"> Boss Time Leaderboards</label>
         <label><input type="checkbox" name="leaderboards" value="Cakes"> Cakes Leaderboard</label>
-        <label><input type="checkbox" name="leaderboards" value="Farming Contests"> Farming Contests Leaderboards</label>
+        <label><input type="checkbox" name="leaderboards" value="Farming Contests"> Farming Contests
+          Leaderboards</label>
       </div>
       <small class="note">Select at least one!</small>
     </div>
@@ -231,11 +232,11 @@
           return;
         }
 
+        // Store the real File object
+        uploadedFiles.push(file);
+
         const reader = new FileReader();
         reader.onload = () => {
-          const base64 = reader.result.split(',')[1];
-          uploadedFiles.push({ filename: file.name, size: file.size, type: file.type, base64 });
-
           if (file.type.startsWith('image/')) {
             const img = document.createElement('img');
             img.className = 'preview-img';
@@ -252,6 +253,7 @@
         reader.readAsDataURL(file);
       }
     });
+
 
     document.getElementById('addContactBtn').onclick = () => {
       const container = document.getElementById('contactFields');
@@ -303,10 +305,10 @@
       submitBtn.disabled = true;
       spinner.style.display = 'inline';
 
-      const formData = new FormData(form);
       for (const file of uploadedFiles) {
         formData.append('image', file);
       }
+
 
       try {
         const res = await fetch(WORKER_URL, {
