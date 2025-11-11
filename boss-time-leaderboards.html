@@ -196,7 +196,7 @@
             const label = formatSubitemName(subitem.name);
             const subitemDiv = document.createElement("div");
             subitemDiv.className = "lb-collection-item";
-            subitemDiv.innerHTML = `<img src="${subitem.image}" alt="${label}" title="${label}" style="width:96px;">`;
+            subitemDiv.innerHTML = `<img src="${subitem.image}" alt="${label}" title="${label}" style="width:96px;"><br><span>${label}</span>`;
             subitemDiv.onclick = () => showLeaderboard(subitem);
             collectionGrid.appendChild(subitemDiv);
         });
