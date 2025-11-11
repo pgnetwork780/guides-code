@@ -6,12 +6,12 @@ const achievementsData = [
     { rank: 2, name: "Kg_lcky_01", achievements: "64" },
     { rank: 3, name: "MythicalPanda30", achievements: "60" },
     { rank: 4, name: "Dharmaveer31", achievements: "57" },
-    { rank: 5, name: "Perry3338", achievements: "51" },
-    { rank: 6, name: "TGJASSIYT", achievements: "49" },
-    { rank: 7, name: "Rehan2038", achievements: "48" },
-    { rank: 8, name: "Kautilya3072", achievements: "46" },
-    { rank: 9, name: "Darkshadow52195", achievements: "41" },
-    { rank: 10, name: "Jeremy2075", achievements: "33" }
+    { rank: 5, name: "SammyMishu", achievements: "52" },
+    { rank: 6, name: "Perry3338", achievements: "51" },
+    { rank: 7, name: "TGJASSIYT", achievements: "49" },
+    { rank: 8, name: "Rehan2038", achievements: "48" },
+    { rank: 9, name: "Kautilya3072", achievements: "46" },
+    { rank: 10, name: "Darkshadow52195", achievements: "41" }
 ];
 // Avg Skill
 const skillData = [
