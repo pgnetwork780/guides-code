@@ -129,7 +129,9 @@
     <div id="footer"></div>
 <script>
     let currentBoss = null;
-    let currentSubcategory = null;
+    let currentCategory = null;
+    let currentType = null;
+    let currentTier = null;
 
     document.addEventListener("DOMContentLoaded", () => {
         showBossTypes();
@@ -138,7 +140,9 @@
 
     function showBossTypes() {
         currentBoss = null;
-        currentSubcategory = null;
+        currentCategory = null;
+        currentType = null;
+        currentTier = null;
         const collectionGrid = document.getElementById("collectionGrid");
         collectionGrid.innerHTML = "";
 
@@ -148,15 +152,17 @@
         collectionsData["Boss Type"].forEach(boss => {
             const bossDiv = document.createElement("div");
             bossDiv.className = "lb-collection-item main-category";
-            bossDiv.innerHTML = `<img src="${boss.image}" alt="${boss.name}" style="width:94px;">`;
-            bossDiv.onclick = () => showSubcategories(boss);
+            bossDiv.innerHTML = `<img src="${boss.image}" alt="${boss.name}" style="width:94px;"><div>${boss.name}</div>`;
+            bossDiv.onclick = () => showCategories(boss);
             collectionGrid.appendChild(bossDiv);
         });
     }
 
-    function showSubcategories(boss) {
+    function showCategories(boss) {
         currentBoss = boss;
-        currentSubcategory = null;
+        currentCategory = null;
+        currentType = null;
+        currentTier = null;
         const collectionGrid = document.getElementById("collectionGrid");
         collectionGrid.innerHTML = "";
 
@@ -169,48 +175,75 @@
         backBtn.onclick = showBossTypes;
         collectionGrid.appendChild(backBtn);
 
-        boss.subcategories.forEach(subcat => {
-            const subcatDiv = document.createElement("div");
-            subcatDiv.className = "lb-collection-item";
-            subcatDiv.innerHTML = `<img src="${subcat.image}" alt="${subcat.name}" style="width:96px;">`;
-            subcatDiv.onclick = () => showSubitems(subcat);
-            collectionGrid.appendChild(subcatDiv);
+        boss.categories.forEach(category => {
+            const catDiv = document.createElement("div");
+            catDiv.className = "lb-collection-item";
+            catDiv.innerHTML = `<div>${category.name}</div>`;
+            catDiv.onclick = () => showTypes(category);
+            collectionGrid.appendChild(catDiv);
         });
     }
 
-    function showSubitems(subcat) {
-        currentSubcategory = subcat;
+    function showTypes(category) {
+        currentCategory = category;
+        currentType = null;
+        currentTier = null;
         const collectionGrid = document.getElementById("collectionGrid");
         collectionGrid.innerHTML = "";
 
-        document.querySelector("#sidelid h2.lb-h2").innerText = `${subcat.name} Leaderboards`;
-        document.getElementById("collectionTitle").innerText = `${subcat.name} Leaderboards`;
+        document.querySelector("#sidelid h2.lb-h2").innerText = `${currentBoss.name} - ${category.name}`;
+        document.getElementById("collectionTitle").innerText = `${currentBoss.name} - ${category.name}`;
 
         const backBtn = document.createElement("div");
         backBtn.className = "lb-collection-item back-btn";
         backBtn.innerHTML = "← Back";
-        backBtn.onclick = () => showSubcategories(currentBoss);
+        backBtn.onclick = () => showCategories(currentBoss);
         collectionGrid.appendChild(backBtn);
 
-        subcat.subitems.forEach(subitem => {
-            const label = formatSubitemName(subitem.name);
-            const subitemDiv = document.createElement("div");
-            subitemDiv.className = "lb-collection-item";
-            subitemDiv.innerHTML = `<img src="${subitem.image}" alt="${label}" title="${label}" style="width:96px;"><br><span>${label}</span>`;
-            subitemDiv.onclick = () => showLeaderboard(subitem);
-            collectionGrid.appendChild(subitemDiv);
+        category.types.forEach(type => {
+            const typeDiv = document.createElement("div");
+            typeDiv.className = "lb-collection-item";
+            typeDiv.innerHTML = `<div>${type.name}</div>`;
+            typeDiv.onclick = () => showTiers(type);
+            collectionGrid.appendChild(typeDiv);
         });
     }
 
-    function showLeaderboard(item) {
-        const label = formatSubitemName(item.name);
-        document.querySelector("#sidelid h2.lb-h2").innerText = `${label} Leaderboard`;
-        document.getElementById("collectionTitle").innerText = `${label} Leaderboard`;
+    function showTiers(type) {
+        currentType = type;
+        currentTier = null;
+        const collectionGrid = document.getElementById("collectionGrid");
+        collectionGrid.innerHTML = "";
+
+        document.querySelector("#sidelid h2.lb-h2").innerText = `${currentBoss.name} - ${currentCategory.name} - ${type.name}`;
+        document.getElementById("collectionTitle").innerText = `${currentBoss.name} - ${currentCategory.name} - ${type.name}`;
+
+        const backBtn = document.createElement("div");
+        backBtn.className = "lb-collection-item back-btn";
+        backBtn.innerHTML = "← Back";
+        backBtn.onclick = () => showTypes(currentCategory);
+        collectionGrid.appendChild(backBtn);
+
+        type.tiers.forEach(tier => {
+            const tierDiv = document.createElement("div");
+            tierDiv.className = "lb-collection-item";
+            tierDiv.innerHTML = `<div>${tier.name}</div>`;
+            tierDiv.onclick = () => showLeaderboard(tier);
+            collectionGrid.appendChild(tierDiv);
+        });
+    }
+
+    function showLeaderboard(tier) {
+        currentTier = tier;
+        document.querySelector("#sidelid h2.lb-h2").innerText =
+            `${currentBoss.name} - ${currentCategory.name} - ${currentType.name} - ${tier.name}`;
+        document.getElementById("collectionTitle").innerText =
+            `${currentBoss.name} - ${currentCategory.name} - ${currentType.name} - ${tier.name}`;
         document.getElementById("scoreHeader").innerText = "Score";
 
         const leaderboardData = document.getElementById("leaderboardData");
-        if (item.players && item.players.length) {
-            leaderboardData.innerHTML = item.players.map(player => `
+        if (tier.players && tier.players.length) {
+            leaderboardData.innerHTML = tier.players.map(player => `
                 <tr>
                     <td>${player.rank}</td>
                     <td>${player.name}</td>
@@ -221,13 +254,6 @@
             leaderboardData.innerHTML = "<tr><td colspan='3'>No data available</td></tr>";
         }
         window.scrollTo({ top: 350, behavior: "smooth" });
-    }
-
-    function formatSubitemName(name) {
-        const lower = name.toLowerCase();
-        if (lower.includes("1")) return "Fastest";
-        if (lower.includes("2")) return "Slowest";
-        return name;
     }
 </script>
 </body>
