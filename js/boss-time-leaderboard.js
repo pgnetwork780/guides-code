@@ -26,6 +26,38 @@ const collectionsData = {
                         },
                         {
                             name: "Tier 1 - Fastest Kill Time",
+                            image: "img/Fastest_Time.png",
+                            players: [
+                                { rank: 1, name: "Unknown", score: "N/A" },
+                                { rank: 2, name: "Unknown", score: "N/A" },
+                                { rank: 3, name: "Unknown", score: "N/A" },
+                                { rank: 4, name: "Unknown", score: "N/A" },
+                                { rank: 5, name: "Unknown", score: "N/A" },
+                                { rank: 6, name: "Unknown", score: "N/A" },
+                                { rank: 7, name: "Unknown", score: "N/A" },
+                                { rank: 8, name: "Unknown", score: "N/A" },
+                                { rank: 9, name: "Unknown", score: "N/A" },
+                                { rank: 10, name: "Unknown", score: "N/A" }
+                            ]
+                        },
+                        {
+                            name: "Tier 1 - Slowest Spawn Time",
+                            image: "img/Slowest_Time.png",
+                            players: [
+                                { rank: 1, name: "Unknown", score: "N/A" },
+                                { rank: 2, name: "Unknown", score: "N/A" },
+                                { rank: 3, name: "Unknown", score: "N/A" },
+                                { rank: 4, name: "Unknown", score: "N/A" },
+                                { rank: 5, name: "Unknown", score: "N/A" },
+                                { rank: 6, name: "Unknown", score: "N/A" },
+                                { rank: 7, name: "Unknown", score: "N/A" },
+                                { rank: 8, name: "Unknown", score: "N/A" },
+                                { rank: 9, name: "Unknown", score: "N/A" },
+                                { rank: 10, name: "Unknown", score: "N/A" }
+                            ]
+                        },
+                        {
+                            name: "Tier 1 - Slowest Kill Time",
                             image: "img/Slowest_Time.png",
                             players: [
                                 { rank: 1, name: "Unknown", score: "N/A" },
@@ -64,6 +96,38 @@ const collectionsData = {
                         },
                         {
                             name: "Tier 2 - Fastest Kill Time",
+                            image: "img/Fastest_Time.png",
+                            players: [
+                                { rank: 1, name: "Unknown", score: "N/A" },
+                                { rank: 2, name: "Unknown", score: "N/A" },
+                                { rank: 3, name: "Unknown", score: "N/A" },
+                                { rank: 4, name: "Unknown", score: "N/A" },
+                                { rank: 5, name: "Unknown", score: "N/A" },
+                                { rank: 6, name: "Unknown", score: "N/A" },
+                                { rank: 7, name: "Unknown", score: "N/A" },
+                                { rank: 8, name: "Unknown", score: "N/A" },
+                                { rank: 9, name: "Unknown", score: "N/A" },
+                                { rank: 10, name: "Unknown", score: "N/A" }
+                            ]
+                        },
+                        {
+                            name: "Tier 2 - Slowest Spawn Time",
+                            image: "img/Slowest_Time.png",
+                            players: [
+                                { rank: 1, name: "Unknown", score: "N/A" },
+                                { rank: 2, name: "Unknown", score: "N/A" },
+                                { rank: 3, name: "Unknown", score: "N/A" },
+                                { rank: 4, name: "Unknown", score: "N/A" },
+                                { rank: 5, name: "Unknown", score: "N/A" },
+                                { rank: 6, name: "Unknown", score: "N/A" },
+                                { rank: 7, name: "Unknown", score: "N/A" },
+                                { rank: 8, name: "Unknown", score: "N/A" },
+                                { rank: 9, name: "Unknown", score: "N/A" },
+                                { rank: 10, name: "Unknown", score: "N/A" }
+                            ]
+                        },
+                        {
+                            name: "Tier 2 - Slowest Kill Time",
                             image: "img/Slowest_Time.png",
                             players: [
                                 { rank: 1, name: "Unknown", score: "N/A" },
@@ -102,6 +166,38 @@ const collectionsData = {
                         },
                         {
                             name: "Tier 3 - Fastest Kill Time",
+                            image: "img/Fastest_Time.png",
+                            players: [
+                                { rank: 1, name: "Unknown", score: "N/A" },
+                                { rank: 2, name: "Unknown", score: "N/A" },
+                                { rank: 3, name: "Unknown", score: "N/A" },
+                                { rank: 4, name: "Unknown", score: "N/A" },
+                                { rank: 5, name: "Unknown", score: "N/A" },
+                                { rank: 6, name: "Unknown", score: "N/A" },
+                                { rank: 7, name: "Unknown", score: "N/A" },
+                                { rank: 8, name: "Unknown", score: "N/A" },
+                                { rank: 9, name: "Unknown", score: "N/A" },
+                                { rank: 10, name: "Unknown", score: "N/A" }
+                            ]
+                        },
+                        {
+                            name: "Tier 3 - Slowest Spawn Time",
+                            image: "img/Slowest_Time.png",
+                            players: [
+                                { rank: 1, name: "Unknown", score: "N/A" },
+                                { rank: 2, name: "Unknown", score: "N/A" },
+                                { rank: 3, name: "Unknown", score: "N/A" },
+                                { rank: 4, name: "Unknown", score: "N/A" },
+                                { rank: 5, name: "Unknown", score: "N/A" },
+                                { rank: 6, name: "Unknown", score: "N/A" },
+                                { rank: 7, name: "Unknown", score: "N/A" },
+                                { rank: 8, name: "Unknown", score: "N/A" },
+                                { rank: 9, name: "Unknown", score: "N/A" },
+                                { rank: 10, name: "Unknown", score: "N/A" }
+                            ]
+                        },
+                        {
+                            name: "Tier 3 - Slowest Kill Time",
                             image: "img/Slowest_Time.png",
                             players: [
                                 { rank: 1, name: "Unknown", score: "N/A" },
@@ -140,6 +236,38 @@ const collectionsData = {
                         },
                         {
                             name: "Tier 4 - Fastest Kill Time",
+                            image: "img/Fastest_Time.png",
+                            players: [
+                                { rank: 1, name: "Unknown", score: "N/A" },
+                                { rank: 2, name: "Unknown", score: "N/A" },
+                                { rank: 3, name: "Unknown", score: "N/A" },
+                                { rank: 4, name: "Unknown", score: "N/A" },
+                                { rank: 5, name: "Unknown", score: "N/A" },
+                                { rank: 6, name: "Unknown", score: "N/A" },
+                                { rank: 7, name: "Unknown", score: "N/A" },
+                                { rank: 8, name: "Unknown", score: "N/A" },
+                                { rank: 9, name: "Unknown", score: "N/A" },
+                                { rank: 10, name: "Unknown", score: "N/A" }
+                            ]
+                        },
+                        {
+                            name: "Tier 4 - Slowest Spawn Time",
+                            image: "img/Slowest_Time.png",
+                            players: [
+                                { rank: 1, name: "Unknown", score: "N/A" },
+                                { rank: 2, name: "Unknown", score: "N/A" },
+                                { rank: 3, name: "Unknown", score: "N/A" },
+                                { rank: 4, name: "Unknown", score: "N/A" },
+                                { rank: 5, name: "Unknown", score: "N/A" },
+                                { rank: 6, name: "Unknown", score: "N/A" },
+                                { rank: 7, name: "Unknown", score: "N/A" },
+                                { rank: 8, name: "Unknown", score: "N/A" },
+                                { rank: 9, name: "Unknown", score: "N/A" },
+                                { rank: 10, name: "Unknown", score: "N/A" }
+                            ]
+                        },
+                        {
+                            name: "Tier 4 - Slowest Kill Time",
                             image: "img/Slowest_Time.png",
                             players: [
                                 { rank: 1, name: "Unknown", score: "N/A" },
@@ -178,6 +306,38 @@ const collectionsData = {
                         },
                         {
                             name: "Tier 5 - Fastest Kill Time",
+                            image: "img/Fastest_Time.png",
+                            players: [
+                                { rank: 1, name: "Unknown", score: "N/A" },
+                                { rank: 2, name: "Unknown", score: "N/A" },
+                                { rank: 3, name: "Unknown", score: "N/A" },
+                                { rank: 4, name: "Unknown", score: "N/A" },
+                                { rank: 5, name: "Unknown", score: "N/A" },
+                                { rank: 6, name: "Unknown", score: "N/A" },
+                                { rank: 7, name: "Unknown", score: "N/A" },
+                                { rank: 8, name: "Unknown", score: "N/A" },
+                                { rank: 9, name: "Unknown", score: "N/A" },
+                                { rank: 10, name: "Unknown", score: "N/A" }
+                            ]
+                        },
+                        {
+                            name: "Tier 5 - Slowest Spawn Time",
+                            image: "img/Slowest_Time.png",
+                            players: [
+                                { rank: 1, name: "Unknown", score: "N/A" },
+                                { rank: 2, name: "Unknown", score: "N/A" },
+                                { rank: 3, name: "Unknown", score: "N/A" },
+                                { rank: 4, name: "Unknown", score: "N/A" },
+                                { rank: 5, name: "Unknown", score: "N/A" },
+                                { rank: 6, name: "Unknown", score: "N/A" },
+                                { rank: 7, name: "Unknown", score: "N/A" },
+                                { rank: 8, name: "Unknown", score: "N/A" },
+                                { rank: 9, name: "Unknown", score: "N/A" },
+                                { rank: 10, name: "Unknown", score: "N/A" }
+                            ]
+                        },
+                        {
+                            name: "Tier 5 - Slowest Kill Time",
                             image: "img/Slowest_Time.png",
                             players: [
                                 { rank: 1, name: "Unknown", score: "N/A" },
@@ -222,6 +382,38 @@ const collectionsData = {
                         },
                         {
                             name: "Tier 1 - Fastest Kill Time",
+                            image: "img/Fastest_Time.png",
+                            players: [
+                                { rank: 1, name: "Unknown", score: "N/A" },
+                                { rank: 2, name: "Unknown", score: "N/A" },
+                                { rank: 3, name: "Unknown", score: "N/A" },
+                                { rank: 4, name: "Unknown", score: "N/A" },
+                                { rank: 5, name: "Unknown", score: "N/A" },
+                                { rank: 6, name: "Unknown", score: "N/A" },
+                                { rank: 7, name: "Unknown", score: "N/A" },
+                                { rank: 8, name: "Unknown", score: "N/A" },
+                                { rank: 9, name: "Unknown", score: "N/A" },
+                                { rank: 10, name: "Unknown", score: "N/A" }
+                            ]
+                        },
+                        {
+                            name: "Tier 1 - Slowest Spawn Time",
+                            image: "img/Slowest_Time.png",
+                            players: [
+                                { rank: 1, name: "Unknown", score: "N/A" },
+                                { rank: 2, name: "Unknown", score: "N/A" },
+                                { rank: 3, name: "Unknown", score: "N/A" },
+                                { rank: 4, name: "Unknown", score: "N/A" },
+                                { rank: 5, name: "Unknown", score: "N/A" },
+                                { rank: 6, name: "Unknown", score: "N/A" },
+                                { rank: 7, name: "Unknown", score: "N/A" },
+                                { rank: 8, name: "Unknown", score: "N/A" },
+                                { rank: 9, name: "Unknown", score: "N/A" },
+                                { rank: 10, name: "Unknown", score: "N/A" }
+                            ]
+                        },
+                        {
+                            name: "Tier 1 - Slowest Kill Time",
                             image: "img/Slowest_Time.png",
                             players: [
                                 { rank: 1, name: "Unknown", score: "N/A" },
@@ -260,6 +452,38 @@ const collectionsData = {
                         },
                         {
                             name: "Tier 2 - Fastest Kill Time",
+                            image: "img/Fastest_Time.png",
+                            players: [
+                                { rank: 1, name: "Unknown", score: "N/A" },
+                                { rank: 2, name: "Unknown", score: "N/A" },
+                                { rank: 3, name: "Unknown", score: "N/A" },
+                                { rank: 4, name: "Unknown", score: "N/A" },
+                                { rank: 5, name: "Unknown", score: "N/A" },
+                                { rank: 6, name: "Unknown", score: "N/A" },
+                                { rank: 7, name: "Unknown", score: "N/A" },
+                                { rank: 8, name: "Unknown", score: "N/A" },
+                                { rank: 9, name: "Unknown", score: "N/A" },
+                                { rank: 10, name: "Unknown", score: "N/A" }
+                            ]
+                        },
+                        {
+                            name: "Tier 2 - Slowest Spawn Time",
+                            image: "img/Slowest_Time.png",
+                            players: [
+                                { rank: 1, name: "Unknown", score: "N/A" },
+                                { rank: 2, name: "Unknown", score: "N/A" },
+                                { rank: 3, name: "Unknown", score: "N/A" },
+                                { rank: 4, name: "Unknown", score: "N/A" },
+                                { rank: 5, name: "Unknown", score: "N/A" },
+                                { rank: 6, name: "Unknown", score: "N/A" },
+                                { rank: 7, name: "Unknown", score: "N/A" },
+                                { rank: 8, name: "Unknown", score: "N/A" },
+                                { rank: 9, name: "Unknown", score: "N/A" },
+                                { rank: 10, name: "Unknown", score: "N/A" }
+                            ]
+                        },
+                        {
+                            name: "Tier 2 - Slowest Kill Time",
                             image: "img/Slowest_Time.png",
                             players: [
                                 { rank: 1, name: "Unknown", score: "N/A" },
@@ -298,6 +522,38 @@ const collectionsData = {
                         },
                         {
                             name: "Tier 3 - Fastest Kill Time",
+                            image: "img/Fastest_Time.png",
+                            players: [
+                                { rank: 1, name: "Unknown", score: "N/A" },
+                                { rank: 2, name: "Unknown", score: "N/A" },
+                                { rank: 3, name: "Unknown", score: "N/A" },
+                                { rank: 4, name: "Unknown", score: "N/A" },
+                                { rank: 5, name: "Unknown", score: "N/A" },
+                                { rank: 6, name: "Unknown", score: "N/A" },
+                                { rank: 7, name: "Unknown", score: "N/A" },
+                                { rank: 8, name: "Unknown", score: "N/A" },
+                                { rank: 9, name: "Unknown", score: "N/A" },
+                                { rank: 10, name: "Unknown", score: "N/A" }
+                            ]
+                        },
+                        {
+                            name: "Tier 3 - Slowest Spawn Time",
+                            image: "img/Slowest_Time.png",
+                            players: [
+                                { rank: 1, name: "Unknown", score: "N/A" },
+                                { rank: 2, name: "Unknown", score: "N/A" },
+                                { rank: 3, name: "Unknown", score: "N/A" },
+                                { rank: 4, name: "Unknown", score: "N/A" },
+                                { rank: 5, name: "Unknown", score: "N/A" },
+                                { rank: 6, name: "Unknown", score: "N/A" },
+                                { rank: 7, name: "Unknown", score: "N/A" },
+                                { rank: 8, name: "Unknown", score: "N/A" },
+                                { rank: 9, name: "Unknown", score: "N/A" },
+                                { rank: 10, name: "Unknown", score: "N/A" }
+                            ]
+                        },
+                        {
+                            name: "Tier 3 - Slowest Kill Time",
                             image: "img/Slowest_Time.png",
                             players: [
                                 { rank: 1, name: "Unknown", score: "N/A" },
@@ -336,6 +592,38 @@ const collectionsData = {
                         },
                         {
                             name: "Tier 4 - Fastest Kill Time",
+                            image: "img/Fastest_Time.png",
+                            players: [
+                                { rank: 1, name: "Unknown", score: "N/A" },
+                                { rank: 2, name: "Unknown", score: "N/A" },
+                                { rank: 3, name: "Unknown", score: "N/A" },
+                                { rank: 4, name: "Unknown", score: "N/A" },
+                                { rank: 5, name: "Unknown", score: "N/A" },
+                                { rank: 6, name: "Unknown", score: "N/A" },
+                                { rank: 7, name: "Unknown", score: "N/A" },
+                                { rank: 8, name: "Unknown", score: "N/A" },
+                                { rank: 9, name: "Unknown", score: "N/A" },
+                                { rank: 10, name: "Unknown", score: "N/A" }
+                            ]
+                        },
+                        {
+                            name: "Tier 4 - Slowest Spawn Time",
+                            image: "img/Slowest_Time.png",
+                            players: [
+                                { rank: 1, name: "Unknown", score: "N/A" },
+                                { rank: 2, name: "Unknown", score: "N/A" },
+                                { rank: 3, name: "Unknown", score: "N/A" },
+                                { rank: 4, name: "Unknown", score: "N/A" },
+                                { rank: 5, name: "Unknown", score: "N/A" },
+                                { rank: 6, name: "Unknown", score: "N/A" },
+                                { rank: 7, name: "Unknown", score: "N/A" },
+                                { rank: 8, name: "Unknown", score: "N/A" },
+                                { rank: 9, name: "Unknown", score: "N/A" },
+                                { rank: 10, name: "Unknown", score: "N/A" }
+                            ]
+                        },
+                        {
+                            name: "Tier 4 - Slowest Kill Time",
                             image: "img/Slowest_Time.png",
                             players: [
                                 { rank: 1, name: "Unknown", score: "N/A" },
@@ -374,6 +662,38 @@ const collectionsData = {
                         },
                         {
                             name: "Tier 5 - Fastest Kill Time",
+                            image: "img/Fastest_Time.png",
+                            players: [
+                                { rank: 1, name: "Unknown", score: "N/A" },
+                                { rank: 2, name: "Unknown", score: "N/A" },
+                                { rank: 3, name: "Unknown", score: "N/A" },
+                                { rank: 4, name: "Unknown", score: "N/A" },
+                                { rank: 5, name: "Unknown", score: "N/A" },
+                                { rank: 6, name: "Unknown", score: "N/A" },
+                                { rank: 7, name: "Unknown", score: "N/A" },
+                                { rank: 8, name: "Unknown", score: "N/A" },
+                                { rank: 9, name: "Unknown", score: "N/A" },
+                                { rank: 10, name: "Unknown", score: "N/A" }
+                            ]
+                        },
+                        {
+                            name: "Tier 5 - Slowest Spawn Time",
+                            image: "img/Slowest_Time.png",
+                            players: [
+                                { rank: 1, name: "Unknown", score: "N/A" },
+                                { rank: 2, name: "Unknown", score: "N/A" },
+                                { rank: 3, name: "Unknown", score: "N/A" },
+                                { rank: 4, name: "Unknown", score: "N/A" },
+                                { rank: 5, name: "Unknown", score: "N/A" },
+                                { rank: 6, name: "Unknown", score: "N/A" },
+                                { rank: 7, name: "Unknown", score: "N/A" },
+                                { rank: 8, name: "Unknown", score: "N/A" },
+                                { rank: 9, name: "Unknown", score: "N/A" },
+                                { rank: 10, name: "Unknown", score: "N/A" }
+                            ]
+                        },
+                        {
+                            name: "Tier 5 - Slowest Kill Time",
                             image: "img/Slowest_Time.png",
                             players: [
                                 { rank: 1, name: "Unknown", score: "N/A" },
