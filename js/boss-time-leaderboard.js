@@ -26,7 +26,7 @@ const collectionsData = {
                         },
                         {
                             name: "Tier 1 - Fastest Kill Time",
-                            image: "img/Fastest_Time.png",
+                            image: "img/Slowest_Time.png",
                             players: [
                                 { rank: 1, name: "Unknown", score: "N/A" },
                                 { rank: 2, name: "Unknown", score: "N/A" },
@@ -64,7 +64,7 @@ const collectionsData = {
                         },
                         {
                             name: "Tier 2 - Fastest Kill Time",
-                            image: "img/Fastest_Time.png",
+                            image: "img/Slowest_Time.png",
                             players: [
                                 { rank: 1, name: "Unknown", score: "N/A" },
                                 { rank: 2, name: "Unknown", score: "N/A" },
@@ -102,7 +102,7 @@ const collectionsData = {
                         },
                         {
                             name: "Tier 3 - Fastest Kill Time",
-                            image: "img/Fastest_Time.png",
+                            image: "img/Slowest_Time.png",
                             players: [
                                 { rank: 1, name: "Unknown", score: "N/A" },
                                 { rank: 2, name: "Unknown", score: "N/A" },
@@ -140,7 +140,7 @@ const collectionsData = {
                         },
                         {
                             name: "Tier 4 - Fastest Kill Time",
-                            image: "img/Fastest_Time.png",
+                            image: "img/Slowest_Time.png",
                             players: [
                                 { rank: 1, name: "Unknown", score: "N/A" },
                                 { rank: 2, name: "Unknown", score: "N/A" },
@@ -178,7 +178,7 @@ const collectionsData = {
                         },
                         {
                             name: "Tier 5 - Fastest Kill Time",
-                            image: "img/Fastest_Time.png",
+                            image: "img/Slowest_Time.png",
                             players: [
                                 { rank: 1, name: "Unknown", score: "N/A" },
                                 { rank: 2, name: "Unknown", score: "N/A" },
@@ -222,7 +222,7 @@ const collectionsData = {
                         },
                         {
                             name: "Tier 1 - Fastest Kill Time",
-                            image: "img/Fastest_Time.png",
+                            image: "img/Slowest_Time.png",
                             players: [
                                 { rank: 1, name: "Unknown", score: "N/A" },
                                 { rank: 2, name: "Unknown", score: "N/A" },
@@ -260,7 +260,7 @@ const collectionsData = {
                         },
                         {
                             name: "Tier 2 - Fastest Kill Time",
-                            image: "img/Fastest_Time.png",
+                            image: "img/Slowest_Time.png",
                             players: [
                                 { rank: 1, name: "Unknown", score: "N/A" },
                                 { rank: 2, name: "Unknown", score: "N/A" },
@@ -298,7 +298,7 @@ const collectionsData = {
                         },
                         {
                             name: "Tier 3 - Fastest Kill Time",
-                            image: "img/Fastest_Time.png",
+                            image: "img/Slowest_Time.png",
                             players: [
                                 { rank: 1, name: "Unknown", score: "N/A" },
                                 { rank: 2, name: "Unknown", score: "N/A" },
@@ -336,7 +336,7 @@ const collectionsData = {
                         },
                         {
                             name: "Tier 4 - Fastest Kill Time",
-                            image: "img/Fastest_Time.png",
+                            image: "img/Slowest_Time.png",
                             players: [
                                 { rank: 1, name: "Unknown", score: "N/A" },
                                 { rank: 2, name: "Unknown", score: "N/A" },
@@ -373,8 +373,8 @@ const collectionsData = {
                             ]
                         },
                         {
-                            name: "Tier 4 - Fastest Kill Time",
-                            image: "img/Fastest_Time.png",
+                            name: "Tier 5 - Fastest Kill Time",
+                            image: "img/Slowest_Time.png",
                             players: [
                                 { rank: 1, name: "Unknown", score: "N/A" },
                                 { rank: 2, name: "Unknown", score: "N/A" },
