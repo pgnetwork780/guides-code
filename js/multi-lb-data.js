@@ -101,8 +101,8 @@ const collectionsData = [
     "image": "img/fenrir-packmaster.png",
     "players": [
       { "rank": 1, "name": "SphinxWraith", "score": "10M+" },
-      { "rank": 2, "name": "DueBacon2007102", "score": "10M+" },
-      { "rank": 3, "name": "Aryaan045", "score": "10M+" },
+      { "rank": 2, "name": "Aryaan045", "score": "10M+" },
+      { "rank": 3, "name": "DueBacon2007102", "score": "10M+" },
       { "rank": 4, "name": "Herejefferson", "score": "N/A" },
       { "rank": 5, "name": "HeGzoStRqFe", "score": "N/A" },
       { "rank": 6, "name": "Itzomkar1232891", "score": "N/A" },
