@@ -14,7 +14,7 @@ const collectionsData = {
                                     name: "Tier 1",
                                     players: [
                                         { rank: 1, name: "TRIPLE_RRT", score: "2s" },
-                                        { rank: 2, name: "Unknown", score: "N/A" },
+                                        { rank: 2, name: "C69P2W", score: "29s" },
                                         { rank: 3, name: "Unknown", score: "N/A" },
                                         { rank: 4, name: "Unknown", score: "N/A" },
                                         { rank: 5, name: "Unknown", score: "N/A" },
@@ -93,7 +93,7 @@ const collectionsData = {
                                 {
                                     name: "Tier 1",
                                     players: [
-                                        { rank: 1, name: "TRIPLE_RRT", score: "2s" },
+                                        { rank: 1, name: "TRIPLE_RRT/C69P2W", score: "2s" },
                                         { rank: 2, name: "Unknown", score: "N/A" },
                                         { rank: 3, name: "Unknown", score: "N/A" },
                                         { rank: 4, name: "Unknown", score: "N/A" },
