@@ -1,4 +1,4 @@
-// Data Here: Achievements, Avg Skill, Cakes, Gems, Crafters Level, Playtime, Slayers
+// Data Here: Achievements, Avg Skill, Cakes, Gems, Crafters Level, Playtime, Slayers, Damage, Networth
 // Not here: Collections, Farming Contests, Boss Time (Or any other with 200-300 lines data)
 // Achievements
 const achievementsData = [
@@ -125,4 +125,17 @@ const damageData = [
   { rank: 8, name: "Unknown", damage: "N/A" },
   { rank: 9, name: "Unknown", damage: "N/A" },
   { rank: 10, name: "Unknown", damage: "N/A" }
+];
+// Networth
+const networthData = [
+  { rank: 1, name: "Unknown", networth: "N/A" },
+  { rank: 2, name: "Unknown", networth: "N/A" },
+  { rank: 3, name: "Unknown", networth: "N/A" },
+  { rank: 4, name: "Unknown", networth: "N/A" },
+  { rank: 5, name: "Unknown", networth: "N/A" },
+  { rank: 6, name: "Unknown", networth: "N/A" },
+  { rank: 7, name: "Unknown", networth: "N/A" },
+  { rank: 8, name: "Unknown", networth: "N/A" },
+  { rank: 9, name: "Unknown", networth: "N/A" },
+  { rank: 10, name: "Unknown", networth: "N/A" }
 ];
