@@ -1,4 +1,4 @@
-// Data Here: Achievements, Avg Skill, Cakes, Gems, Crafters Level, Playtime, Slayers, Damage, Networth
+// Data Here: Achievements, Avg Skill, Cakes, Gems, Crafters Level, Playtime, Slayers, Damage, Networth, Pets, Coins
 // Not here: Collections, Farming Contests, Boss Time (Or any other with 200-300 lines data)
 // Achievements
 const achievementsData = [
@@ -139,3 +139,89 @@ const networthData = [
   { rank: 9, name: "Unknown", networth: "N/A" },
   { rank: 10, name: "Unknown", networth: "N/A" }
 ];
+// Pets
+const petsData = {
+    petsLevels: {
+        name: "Pets Levels",
+        scoreLabel: "Level",
+        players: [
+            { rank: 1, name: "Unknown", score: "N/A" },
+            { rank: 2, name: "Unknown", score: "N/A" },
+            { rank: 3, name: "Unknown", score: "N/A" },
+            { rank: 4, name: "Unknown", score: "N/A" },
+            { rank: 5, name: "Unknown", score: "N/A" },
+            { rank: 6, name: "Unknown", score: "N/A" },
+            { rank: 7, name: "Unknown", score: "N/A" },
+            { rank: 8, name: "Unknown", score: "N/A" },
+            { rank: 9, name: "Unknown", score: "N/A" },
+            { rank: 10, name: "Unknown", score: "N/A" }
+        ]
+    },
+    petsXP: {
+        name: "Pets XP",
+        scoreLabel: "XP",
+        players: [
+            { rank: 1, name: "Unknown", score: "N/A" },
+            { rank: 2, name: "Unknown", score: "N/A" },
+            { rank: 3, name: "Unknown", score: "N/A" },
+            { rank: 4, name: "Unknown", score: "N/A" },
+            { rank: 5, name: "Unknown", score: "N/A" },
+            { rank: 6, name: "Unknown", score: "N/A" },
+            { rank: 7, name: "Unknown", score: "N/A" },
+            { rank: 8, name: "Unknown", score: "N/A" },
+            { rank: 9, name: "Unknown", score: "N/A" },
+            { rank: 10, name: "Unknown", score: "N/A" }
+        ]
+    },
+    petScore: {
+        name: "Pet Score",
+        scoreLabel: "Score",
+        players: [
+            { rank: 1, name: "Unknown", score: "N/A" },
+            { rank: 2, name: "Unknown", score: "N/A" },
+            { rank: 3, name: "Unknown", score: "N/A" },
+            { rank: 4, name: "Unknown", score: "N/A" },
+            { rank: 5, name: "Unknown", score: "N/A" },
+            { rank: 6, name: "Unknown", score: "N/A" },
+            { rank: 7, name: "Unknown", score: "N/A" },
+            { rank: 8, name: "Unknown", score: "N/A" },
+            { rank: 9, name: "Unknown", score: "N/A" },
+            { rank: 10, name: "Unknown", score: "N/A" }
+        ]
+    }
+};
+// Most Coins and Dropped Coins
+const coinsData = {
+    highestCoins: {
+        name: "Highest Coins",
+        scoreLabel: "Coins",
+        players: [
+            { rank: 1, name: "Unknown", score: "N/A" },
+            { rank: 2, name: "Unknown", score: "N/A" },
+            { rank: 3, name: "Unknown", score: "N/A" },
+            { rank: 4, name: "Unknown", score: "N/A" },
+            { rank: 5, name: "Unknown", score: "N/A" },
+            { rank: 6, name: "Unknown", score: "N/A" },
+            { rank: 7, name: "Unknown", score: "N/A" },
+            { rank: 8, name: "Unknown", score: "N/A" },
+            { rank: 9, name: "Unknown", score: "N/A" },
+            { rank: 10, name: "Unknown", score: "N/A" }
+        ]
+    },
+    droppedCoins: {
+        name: "Dropped Coins",
+        scoreLabel: "Coins",
+        players: [
+            { rank: 1, name: "Unknown", score: "N/A" },
+            { rank: 2, name: "Unknown", score: "N/A" },
+            { rank: 3, name: "Unknown", score: "N/A" },
+            { rank: 4, name: "Unknown", score: "N/A" },
+            { rank: 5, name: "Unknown", score: "N/A" },
+            { rank: 6, name: "Unknown", score: "N/A" },
+            { rank: 7, name: "Unknown", score: "N/A" },
+            { rank: 8, name: "Unknown", score: "N/A" },
+            { rank: 9, name: "Unknown", score: "N/A" },
+            { rank: 10, name: "Unknown", score: "N/A" }
+        ]
+    }
+};
