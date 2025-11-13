@@ -13,7 +13,7 @@
     <title>Pets Leaderboards</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="js/script.js"></script>
-    <script src="js/pets-leaderboards.js"></script>
+    <script src="js/multi-lb-data.js"></script>
     <link rel="stylesheet" href="css/essential.css">
     <link rel="stylesheet" href="css/collections-leaderboards.css">
 </head>
@@ -83,7 +83,7 @@
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const collectionGrid = document.getElementById("collectionGrid");
-            Object.values(leaderboards).forEach(lb => {
+            Object.values(petsData).forEach(lb => {
                 const div = document.createElement("div");
                 div.className = "lb-collection-item";
                 div.innerHTML = `<img src="assets/leaderboard-icon.png" alt="${lb.name}" title="${lb.name}" style="width:48px;height:48px;"><p>${lb.name} Leaderboard</p>`;
