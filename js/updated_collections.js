@@ -1077,17 +1077,17 @@ const collectionsData = {
                 },
                 {
                     "rank": 2,
+                    "name": "Aryaan045",
+                    "score": "100M+"
+                },
+                {
+                    "rank": 3,
                     "name": "Moerderfisch",
                     "score": "51.6M+"
                 },
                 {
-                    "rank": 3,
-                    "name": "Hefty6248",
-                    "score": "N/A"
-                },
-                {
                     "rank": 4,
-                    "name": "Unknown",
+                    "name": "Hefty6248",
                     "score": "N/A"
                 },
                 {
