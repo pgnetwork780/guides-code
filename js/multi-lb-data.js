@@ -1,4 +1,4 @@
-// Data Here: Achievements, Avg Skill, Cakes, Gems, Crafters Level, Playtime, Slayers, Damage, Networth, Pets, Coins, Skills
+// Data Here: Achievements, Avg Skill, Cakes, Gems, Crafters Level, Playtime, Slayers, Damage, Networth, Pets, Coins, Skills, Target Practice
 // Not here: Collections, Farming Contests, Boss Time (Or any other with 200-300 lines data)
 // Achievements
 const achievementsData = [
@@ -275,4 +275,16 @@ const skillsLeaderboards = {
             { rank: 10, name: "Unknown", score: "N/A" }
         ]
     }
+};
+// Target Practice
+const targetPracticeLeaderboard = {
+    name: "Target Practice",
+    scoreLabel: "Score",
+    players: [
+        { rank: 1, name: "Unknown", score: "N/A" },
+        { rank: 2, name: "Unknown", score: "N/A" },
+        { rank: 3, name: "Unknown", score: "N/A" },
+        { rank: 4, name: "Unknown", score: "N/A" },
+        { rank: 5, name: "Unknown", score: "N/A" }
+    ]
 };
