@@ -1,4 +1,4 @@
-// Data Here: Achievements, Avg Skill, Cakes, Gems, Crafters Level, Playtime, Slayers, Damage, Networth, Pets, Coins
+// Data Here: Achievements, Avg Skill, Cakes, Gems, Crafters Level, Playtime, Slayers, Damage, Networth, Pets, Coins, Skills
 // Not here: Collections, Farming Contests, Boss Time (Or any other with 200-300 lines data)
 // Achievements
 const achievementsData = [
@@ -211,6 +211,57 @@ const coinsData = {
     droppedCoins: {
         name: "Dropped Coins",
         scoreLabel: "Coins",
+        players: [
+            { rank: 1, name: "Unknown", score: "N/A" },
+            { rank: 2, name: "Unknown", score: "N/A" },
+            { rank: 3, name: "Unknown", score: "N/A" },
+            { rank: 4, name: "Unknown", score: "N/A" },
+            { rank: 5, name: "Unknown", score: "N/A" },
+            { rank: 6, name: "Unknown", score: "N/A" },
+            { rank: 7, name: "Unknown", score: "N/A" },
+            { rank: 8, name: "Unknown", score: "N/A" },
+            { rank: 9, name: "Unknown", score: "N/A" },
+            { rank: 10, name: "Unknown", score: "N/A" }
+        ]
+    }
+};
+// Skills
+const skillsLeaderboards = {
+    skillsXp: {
+        name: "Skills XP",
+        scoreLabel: "XP",
+        players: [
+            { rank: 1, name: "Unknown", score: "N/A" },
+            { rank: 2, name: "Unknown", score: "N/A" },
+            { rank: 3, name: "Unknown", score: "N/A" },
+            { rank: 4, name: "Unknown", score: "N/A" },
+            { rank: 5, name: "Unknown", score: "N/A" },
+            { rank: 6, name: "Unknown", score: "N/A" },
+            { rank: 7, name: "Unknown", score: "N/A" },
+            { rank: 8, name: "Unknown", score: "N/A" },
+            { rank: 9, name: "Unknown", score: "N/A" },
+            { rank: 10, name: "Unknown", score: "N/A" }
+        ]
+    },
+    averageSkill: {
+        name: "Average Skill",
+        scoreLabel: "Average",
+        players: [
+            { rank: 1, name: "SphinxWraith/David_R06", level: "51.7" },
+            { rank: 2, name: "Moerderfisch", level: "50.7" },
+            { rank: 3, name: "GRAVITY8303", level: "50.2" },
+            { rank: 4, name: "AndyGamer024", level: "50" },
+            { rank: 5, name: "Itzomkar1232891", level: "47.2" },
+            { rank: 6, name: "DRONZAR_OP", level: "46.2" },
+            { rank: 7, name: "Kg_lcky_01", level: "46" },
+            { rank: 8, name: "Rehan2038", level: "42.3" },
+            { rank: 9, name: "Perry3338", level: "39.5" },
+            { rank: 10, name: "Kautilya3072", level: "36.2" }
+        ]
+    },
+    skillsLevels: {
+        name: "Skills Levels",
+        scoreLabel: "Level",
         players: [
             { rank: 1, name: "Unknown", score: "N/A" },
             { rank: 2, name: "Unknown", score: "N/A" },
