@@ -89,7 +89,7 @@ const collectionsData = {
             image: "img/Carrot.webp",
             players: [
                 { rank: 1, name: "hhhuuuhh", score: "553k+" },
-                { rank: 2, name: "Unknown", score: "N/A" },
+                { rank: 2, name: "SAAD_KING_07726", score: "329K+" },
                 { rank: 3, name: "Unknown", score: "N/A" },
                 { rank: 4, name: "Unknown", score: "N/A" },
                 { rank: 5, name: "Unknown", score: "N/A" },
@@ -110,7 +110,7 @@ const collectionsData = {
                 { rank: 4, name: "Fallen1sec", score: "1.4M+" },
                 { rank: 5, name: "Aryaan045", score: "1.2M+" },
                 { rank: 6, name: "DRONZAR_OP", score: "1M+" },
-                { rank: 7, name: "Unknown", score: "N/A" },
+                { rank: 7, name: "SAAD_KING_07726", score: "553K+" },
                 { rank: 8, name: "Unknown", score: "N/A" },
                 { rank: 9, name: "Unknown", score: "N/A" },
                 { rank: 10, name: "Unknown", score: "N/A" }
@@ -121,7 +121,7 @@ const collectionsData = {
             image: "img/Cocoa_Beans.webp",
             players: [
                 { rank: 1, name: "hhhuuuhh", score: "183k+" },
-                { rank: 2, name: "Unknown", score: "N/A" },
+                { rank: 2, name: "DRONZAR_OP", score: "305K+" },
                 { rank: 3, name: "Unknown", score: "N/A" },
                 { rank: 4, name: "Unknown", score: "N/A" },
                 { rank: 5, name: "Unknown", score: "N/A" },
@@ -217,7 +217,7 @@ const collectionsData = {
             image: "img/Beetroot.webp",
             players: [
                 { rank: 1, name: "AYUSHAKS30", score: "1M+" },
-                { rank: 2, name: "Unknown", score: "N/A" },
+                { rank: 2, name: "SAAD_KING_07726", score: "272K+" },
                 { rank: 3, name: "Unknown", score: "N/A" },
                 { rank: 4, name: "Unknown", score: "N/A" },
                 { rank: 5, name: "Unknown", score: "N/A" },
