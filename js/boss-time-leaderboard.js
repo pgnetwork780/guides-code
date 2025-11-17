@@ -238,7 +238,7 @@ const collectionsData = {
                                 {
                                     name: "Tier 5",
                                     players: [
-                                        { rank: 1, name: "Kg_lcky_01", score: "55.3y" },
+                                        { rank: 1, name: "Unknown", score: "N/A" },
                                         { rank: 2, name: "Unknown", score: "N/A" },
                                         { rank: 3, name: "Unknown", score: "N/A" },
                                         { rank: 4, name: "Unknown", score: "N/A" },
@@ -318,7 +318,7 @@ const collectionsData = {
                                 {
                                     name: "Tier 5",
                                     players: [
-                                        { rank: 1, name: "Unknown", score: "N/A" },
+                                        { rank: 1, name: "Kg_lcky_01", score: "55.3y" },
                                         { rank: 2, name: "Unknown", score: "N/A" },
                                         { rank: 3, name: "Unknown", score: "N/A" },
                                         { rank: 4, name: "Unknown", score: "N/A" },
