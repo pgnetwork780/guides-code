@@ -73,10 +73,10 @@ const collectionsData = {
                                 {
                                     name: "Tier 5",
                                     players: [
-                                        { rank: 1, name: "AYUSHAKS30", score: "2m 54s" },
-                                        { rank: 2, name: "MACroni777", score: "4m 25s" },
-                                        { rank: 3, name: "Unknown", score: "N/A" },
-                                        { rank: 4, name: "Unknown", score: "N/A" },
+                                        { rank: 1, name: "Kg_lcky_01", score: "6s" },
+                                        { rank: 2, name: "Dipanshu_FF", score: "26s" },
+                                        { rank: 3, name: "AYUSHAKS30", score: "2m 54s" },
+                                        { rank: 4, name: "MACroni777", score: "4m 25s" },
                                         { rank: 5, name: "Unknown", score: "N/A" },
                                         { rank: 6, name: "Unknown", score: "N/A" },
                                         { rank: 7, name: "Unknown", score: "N/A" },
@@ -155,8 +155,8 @@ const collectionsData = {
                                     players: [
                                         { rank: 1, name: "AYUSHAKS30", score: "2s" },
                                         { rank: 2, name: "MACroni777", score: "4s" },
-                                        { rank: 3, name: "Unknown", score: "N/A" },
-                                        { rank: 4, name: "Unknown", score: "N/A" },
+                                        { rank: 3, name: "Dipanshu_FF", score: "21s" },
+                                        { rank: 4, name: "Kg_lcky_01", score: "23s" },
                                         { rank: 5, name: "Unknown", score: "N/A" },
                                         { rank: 6, name: "Unknown", score: "N/A" },
                                         { rank: 7, name: "Unknown", score: "N/A" },
@@ -238,7 +238,7 @@ const collectionsData = {
                                 {
                                     name: "Tier 5",
                                     players: [
-                                        { rank: 1, name: "Unknown", score: "N/A" },
+                                        { rank: 1, name: "Kg_lcky_01", score: "55.3y" },
                                         { rank: 2, name: "Unknown", score: "N/A" },
                                         { rank: 3, name: "Unknown", score: "N/A" },
                                         { rank: 4, name: "Unknown", score: "N/A" },
