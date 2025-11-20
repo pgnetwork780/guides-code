@@ -100,8 +100,8 @@ const collectionsData = [
     "name": "Wolf Slayer",
     "image": "img/fenrir-packmaster.png",
     "players": [
-      { "rank": 1, "name": "SphinxWraith", "score": "10M+" },
-      { "rank": 2, "name": "Aryaan045", "score": "10M+" },
+      { "rank": 1, "name": "Aryaan045", "score": "13M+" },
+      { "rank": 2, "name": "SphinxWraith", "score": "10M+" },
       { "rank": 3, "name": "DueBacon2007102", "score": "10M+" },
       { "rank": 4, "name": "Herejefferson", "score": "N/A" },
       { "rank": 5, "name": "HeGzoStRqFe", "score": "N/A" },
