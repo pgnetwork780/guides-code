@@ -1051,12 +1051,12 @@ const collectionsData = {
                 },
                 {
                     "rank": 8,
-                    "name": "John9678",
-                    "score": "N/A"
+                    "name": "SpiralCard90164",
+                    "score": "130.7M+"
                 },
                 {
                     "rank": 9,
-                    "name": "SpiralCard90164",
+                    "name": "John9678",
                     "score": "N/A"
                 },
                 {
