@@ -227,7 +227,7 @@
         type.tiers.forEach(tier => {
             const tierDiv = document.createElement("div");
             tierDiv.className = "lb-collection-item";
-            tierDiv.innerHTML = `<div>${tier.name}</div>`;
+            tierDiv.innerHTML = `<img src="${tier.image}" alt="${tier.name}" style="width:94px;">`;
             tierDiv.onclick = () => showLeaderboard(tier);
             collectionGrid.appendChild(tierDiv);
         });
