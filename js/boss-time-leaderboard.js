@@ -12,6 +12,7 @@ const collectionsData = {
                             tiers: [
                                 {
                                     name: "Tier 1",
+                                    image: "assets/slayers/zombie-1.png",
                                     players: [
                                         { rank: 1, name: "TRIPLE_RRT", score: "2s" },
                                         { rank: 2, name: "C69P2W", score: "29s" },
@@ -27,6 +28,7 @@ const collectionsData = {
                                 },
                                 {
                                     name: "Tier 2",
+                                    image: "assets/slayers/zombie-2.png",
                                     players: [
                                         { rank: 1, name: "C69P2W", score: "50s" },
                                         { rank: 2, name: "Unknown", score: "N/A" },
@@ -42,6 +44,7 @@ const collectionsData = {
                                 },
                                 {
                                     name: "Tier 3",
+                                    image: "assets/slayers/zombie-3.png",
                                     players: [
                                         { rank: 1, name: "Unknown", score: "N/A" },
                                         { rank: 2, name: "Unknown", score: "N/A" },
@@ -57,6 +60,7 @@ const collectionsData = {
                                 },
                                 {
                                     name: "Tier 4",
+                                    image: "assets/slayers/zombie-4.png",
                                     players: [
                                         { rank: 1, name: "Unknown", score: "N/A" },
                                         { rank: 2, name: "Unknown", score: "N/A" },
@@ -72,6 +76,7 @@ const collectionsData = {
                                 },
                                 {
                                     name: "Tier 5",
+                                    image: "assets/slayers/zombie-5.png",
                                     players: [
                                         { rank: 1, name: "Kg_lcky_01", score: "6s" },
                                         { rank: 2, name: "Dipanshu_FF", score: "26s" },
@@ -92,6 +97,7 @@ const collectionsData = {
                             tiers: [
                                 {
                                     name: "Tier 1",
+                                    image: "assets/slayers/zombie-1.png",
                                     players: [
                                         { rank: 1, name: "TRIPLE_RRT/C69P2W", score: "2s" },
                                         { rank: 2, name: "Unknown", score: "N/A" },
@@ -107,6 +113,7 @@ const collectionsData = {
                                 },
                                 {
                                     name: "Tier 2",
+                                    image: "assets/slayers/zombie-2.png",
                                     players: [
                                         { rank: 1, name: "C69P2W", score: "2s" },
                                         { rank: 2, name: "Unknown", score: "N/A" },
@@ -122,6 +129,7 @@ const collectionsData = {
                                 },
                                 {
                                     name: "Tier 3",
+                                    image: "assets/slayers/zombie-3.png",
                                     players: [
                                         { rank: 1, name: "Unknown", score: "N/A" },
                                         { rank: 2, name: "Unknown", score: "N/A" },
@@ -137,6 +145,7 @@ const collectionsData = {
                                 },
                                 {
                                     name: "Tier 4",
+                                    image: "assets/slayers/zombie-4.png",
                                     players: [
                                         { rank: 1, name: "Unknown", score: "N/A" },
                                         { rank: 2, name: "Unknown", score: "N/A" },
@@ -152,6 +161,7 @@ const collectionsData = {
                                 },
                                 {
                                     name: "Tier 5",
+                                    image: "assets/slayers/zombie-5.png",
                                     players: [
                                         { rank: 1, name: "AYUSHAKS30", score: "2s" },
                                         { rank: 2, name: "MACroni777", score: "4s" },
@@ -177,6 +187,7 @@ const collectionsData = {
                             tiers: [
                                 {
                                     name: "Tier 1",
+                                    image: "assets/slayers/zombie-1.png",
                                     players: [
                                         { rank: 1, name: "Unknown", score: "N/A" },
                                         { rank: 2, name: "Unknown", score: "N/A" },
@@ -192,6 +203,7 @@ const collectionsData = {
                                 },
                                 {
                                     name: "Tier 2",
+                                    image: "assets/slayers/zombie-2.png",
                                     players: [
                                         { rank: 1, name: "Unknown", score: "N/A" },
                                         { rank: 2, name: "Unknown", score: "N/A" },
@@ -207,6 +219,7 @@ const collectionsData = {
                                 },
                                 {
                                     name: "Tier 3",
+                                    image: "assets/slayers/zombie-3.png",
                                     players: [
                                         { rank: 1, name: "Unknown", score: "N/A" },
                                         { rank: 2, name: "Unknown", score: "N/A" },
@@ -222,6 +235,7 @@ const collectionsData = {
                                 },
                                 {
                                     name: "Tier 4",
+                                    image: "assets/slayers/zombie-4.png",
                                     players: [
                                         { rank: 1, name: "Unknown", score: "N/A" },
                                         { rank: 2, name: "Unknown", score: "N/A" },
@@ -237,6 +251,7 @@ const collectionsData = {
                                 },
                                 {
                                     name: "Tier 5",
+                                    image: "assets/slayers/zombie-5.png",
                                     players: [
                                         { rank: 1, name: "Unknown", score: "N/A" },
                                         { rank: 2, name: "Unknown", score: "N/A" },
@@ -257,6 +272,7 @@ const collectionsData = {
                             tiers: [
                                 {
                                     name: "Tier 1",
+                                    image: "assets/slayers/zombie-1.png",
                                     players: [
                                         { rank: 1, name: "Unknown", score: "N/A" },
                                         { rank: 2, name: "Unknown", score: "N/A" },
@@ -272,6 +288,7 @@ const collectionsData = {
                                 },
                                 {
                                     name: "Tier 2",
+                                    image: "assets/slayers/zombie-2.png",
                                     players: [
                                         { rank: 1, name: "Unknown", score: "N/A" },
                                         { rank: 2, name: "Unknown", score: "N/A" },
@@ -287,6 +304,7 @@ const collectionsData = {
                                 },
                                 {
                                     name: "Tier 3",
+                                    image: "assets/slayers/zombie-3.png",
                                     players: [
                                         { rank: 1, name: "Unknown", score: "N/A" },
                                         { rank: 2, name: "Unknown", score: "N/A" },
@@ -302,6 +320,7 @@ const collectionsData = {
                                 },
                                 {
                                     name: "Tier 4",
+                                    image: "assets/slayers/zombie-4.png",
                                     players: [
                                         { rank: 1, name: "Unknown", score: "N/A" },
                                         { rank: 2, name: "Unknown", score: "N/A" },
@@ -317,6 +336,7 @@ const collectionsData = {
                                 },
                                 {
                                     name: "Tier 5",
+                                    image: "assets/slayers/zombie-5.png",
                                     players: [
                                         { rank: 1, name: "Kg_lcky_01", score: "55.3y" },
                                         { rank: 2, name: "Unknown", score: "N/A" },
@@ -348,6 +368,7 @@ const collectionsData = {
                             tiers: [
                                 {
                                     name: "Tier 1",
+                                    image: "assets/slayers/wolf-1.png",
                                     players: [
                                         { rank: 1, name: "Unknown", score: "N/A" },
                                         { rank: 2, name: "Unknown", score: "N/A" },
@@ -363,6 +384,7 @@ const collectionsData = {
                                 },
                                 {
                                     name: "Tier 2",
+                                    image: "assets/slayers/wolf-2.png",
                                     players: [
                                         { rank: 1, name: "Unknown", score: "N/A" },
                                         { rank: 2, name: "Unknown", score: "N/A" },
@@ -378,6 +400,7 @@ const collectionsData = {
                                 },
                                 {
                                     name: "Tier 3",
+                                    image: "assets/slayers/wolf-3.png",
                                     players: [
                                         { rank: 1, name: "Unknown", score: "N/A" },
                                         { rank: 2, name: "Unknown", score: "N/A" },
@@ -393,6 +416,7 @@ const collectionsData = {
                                 },
                                 {
                                     name: "Tier 4",
+                                    image: "assets/slayers/wolf-4.png",
                                     players: [
                                         { rank: 1, name: "Unknown", score: "N/A" },
                                         { rank: 2, name: "Unknown", score: "N/A" },
@@ -408,6 +432,7 @@ const collectionsData = {
                                 },
                                 {
                                     name: "Tier 5",
+                                    image: "assets/slayers/wolf-5.png",
                                     players: [
                                         { rank: 1, name: "Unknown", score: "N/A" },
                                         { rank: 2, name: "Unknown", score: "N/A" },
@@ -428,6 +453,7 @@ const collectionsData = {
                             tiers: [
                                 {
                                     name: "Tier 1",
+                                    image: "assets/slayers/wolf-1.png",
                                     players: [
                                         { rank: 1, name: "Unknown", score: "N/A" },
                                         { rank: 2, name: "Unknown", score: "N/A" },
@@ -443,6 +469,7 @@ const collectionsData = {
                                 },
                                 {
                                     name: "Tier 2",
+                                    image: "assets/slayers/wolf-2.png",
                                     players: [
                                         { rank: 1, name: "Unknown", score: "N/A" },
                                         { rank: 2, name: "Unknown", score: "N/A" },
@@ -458,6 +485,7 @@ const collectionsData = {
                                 },
                                 {
                                     name: "Tier 3",
+                                    image: "assets/slayers/wolf-3.png",
                                     players: [
                                         { rank: 1, name: "Unknown", score: "N/A" },
                                         { rank: 2, name: "Unknown", score: "N/A" },
@@ -473,6 +501,7 @@ const collectionsData = {
                                 },
                                 {
                                     name: "Tier 4",
+                                    image: "assets/slayers/wolf-4.png",
                                     players: [
                                         { rank: 1, name: "Unknown", score: "N/A" },
                                         { rank: 2, name: "Unknown", score: "N/A" },
@@ -488,6 +517,7 @@ const collectionsData = {
                                 },
                                 {
                                     name: "Tier 5",
+                                    image: "assets/slayers/wolf-5.png",
                                     players: [
                                         { rank: 1, name: "Unknown", score: "N/A" },
                                         { rank: 2, name: "Unknown", score: "N/A" },
@@ -513,6 +543,7 @@ const collectionsData = {
                             tiers: [
                                 {
                                     name: "Tier 1",
+                                    image: "assets/slayers/wolf-1.png",
                                     players: [
                                         { rank: 1, name: "Unknown", score: "N/A" },
                                         { rank: 2, name: "Unknown", score: "N/A" },
@@ -528,6 +559,7 @@ const collectionsData = {
                                 },
                                 {
                                     name: "Tier 2",
+                                    image: "assets/slayers/wolf-2.png",
                                     players: [
                                         { rank: 1, name: "Unknown", score: "N/A" },
                                         { rank: 2, name: "Unknown", score: "N/A" },
@@ -543,6 +575,7 @@ const collectionsData = {
                                 },
                                 {
                                     name: "Tier 3",
+                                    image: "assets/slayers/wolf-3.png",
                                     players: [
                                         { rank: 1, name: "Unknown", score: "N/A" },
                                         { rank: 2, name: "Unknown", score: "N/A" },
@@ -558,6 +591,7 @@ const collectionsData = {
                                 },
                                 {
                                     name: "Tier 4",
+                                    image: "assets/slayers/wolf-4.png",
                                     players: [
                                         { rank: 1, name: "Unknown", score: "N/A" },
                                         { rank: 2, name: "Unknown", score: "N/A" },
@@ -573,6 +607,7 @@ const collectionsData = {
                                 },
                                 {
                                     name: "Tier 5",
+                                    image: "assets/slayers/wolf-5.png",
                                     players: [
                                         { rank: 1, name: "Unknown", score: "N/A" },
                                         { rank: 2, name: "Unknown", score: "N/A" },
@@ -593,6 +628,7 @@ const collectionsData = {
                             tiers: [
                                 {
                                     name: "Tier 1",
+                                    image: "assets/slayers/wolf-1.png",
                                     players: [
                                         { rank: 1, name: "Unknown", score: "N/A" },
                                         { rank: 2, name: "Unknown", score: "N/A" },
@@ -608,6 +644,7 @@ const collectionsData = {
                                 },
                                 {
                                     name: "Tier 2",
+                                    image: "assets/slayers/wolf-2.png",
                                     players: [
                                         { rank: 1, name: "Unknown", score: "N/A" },
                                         { rank: 2, name: "Unknown", score: "N/A" },
@@ -623,6 +660,7 @@ const collectionsData = {
                                 },
                                 {
                                     name: "Tier 3",
+                                    image: "assets/slayers/wolf-3.png",
                                     players: [
                                         { rank: 1, name: "Unknown", score: "N/A" },
                                         { rank: 2, name: "Unknown", score: "N/A" },
@@ -638,6 +676,7 @@ const collectionsData = {
                                 },
                                 {
                                     name: "Tier 4",
+                                    image: "assets/slayers/wolf-4.png",
                                     players: [
                                         { rank: 1, name: "Unknown", score: "N/A" },
                                         { rank: 2, name: "Unknown", score: "N/A" },
@@ -653,6 +692,7 @@ const collectionsData = {
                                 },
                                 {
                                     name: "Tier 5",
+                                    image: "assets/slayers/wolf-5.png",
                                     players: [
                                         { rank: 1, name: "Unknown", score: "N/A" },
                                         { rank: 2, name: "Unknown", score: "N/A" },
