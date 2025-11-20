@@ -339,7 +339,7 @@ const collectionsData = {
                                     image: "assets/slayers/zombie-5.png",
                                     players: [
                                         { rank: 1, name: "Kg_lcky_01", score: "55.3y" },
-                                        { rank: 2, name: "Unknown", score: "N/A" },
+                                        { rank: 2, name: "Pratham7354", score: "55.3y" },
                                         { rank: 3, name: "Unknown", score: "N/A" },
                                         { rank: 4, name: "Unknown", score: "N/A" },
                                         { rank: 5, name: "Unknown", score: "N/A" },
