@@ -217,7 +217,7 @@ const collectionsData = {
             image: "img/Beetroot.webp",
             players: [
                 { rank: 1, name: "AYUSHAKS30", score: "1M+" },
-                { rank: 2, name: "Ary5aan04", score: "522K+" },
+                { rank: 2, name: "Aryaan045", score: "522K+" },
                 { rank: 3, name: "SAAD_KING_07726", score: "272K+" },
                 { rank: 4, name: "Fallen1sec", score: "233K+" },
                 { rank: 5, name: "Sniper3358", score: "203K+" },
