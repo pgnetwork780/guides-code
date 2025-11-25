@@ -599,7 +599,7 @@ const collectionsData = {
                 {
                     "rank": 7,
                     "name": "TINKUGAMER1232",
-                    "score": "3.8M+"
+                    "score": "N/A"
                 },
                 {
                     "rank": 8,
@@ -614,7 +614,7 @@ const collectionsData = {
                 {
                     "rank": 10,
                     "name": "JODHEMANT8975",
-                    "score": "2M+"
+                    "score": "N/A"
                 }
             ]
         },
