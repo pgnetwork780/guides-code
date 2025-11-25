@@ -177,18 +177,18 @@
   },
   {
     "id": "12",
-    "name": "TotalHeartz",
-    "discord": "heartalive786",
+    "name": "ToxicShadow6010",
+    "discord": ".sap.8282",
     "rank": "player",
-    "status": "Paused",
+    "status": "Selling",
     "timezone": "IST",
     "gems": "N/A",
     "gemStatus": "No",
-    "stock": "1 Every 2 weeks",
-    "sales": "1",
-    "gold": "20M",
-    "dia": "N/A",
-    "em": "N/A",
-    "access-code": "261658T"
+    "stock": "Lots",
+    "sales": "10+",
+    "gold": "25M",
+    "dia": "45M",
+    "em": "95M",
+    "access-code": "563836T"
   }
 ]
