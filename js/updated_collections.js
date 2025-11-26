@@ -583,12 +583,12 @@ const collectionsData = {
                 },
                 {
                     "rank": 4,
-                    "name": "Hefty6248",
-                    "score": "N/A"
+                    "name": "Manglubaba",
+                    "score": "28.2M+"
                 },
                 {
                     "rank": 5,
-                    "name": "Unknown",
+                    "name": "Hefty6248",
                     "score": "N/A"
                 },
                 {
