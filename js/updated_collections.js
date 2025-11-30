@@ -624,18 +624,18 @@ const collectionsData = {
             "players": [
                 {
                     "rank": 1,
+                    "name": "AndyGamer024",
+                    "score": "N/A"
+                },
+                {
+                    "rank": 2,
                     "name": "AK_GAMERR5398",
                     "score": "65M+"
                 },
                 {
-                    "rank": 2,
+                    "rank": 3,
                     "name": "Gelacktic",
                     "score": "45M+"
-                },
-                {
-                    "rank": 3,
-                    "name": "Unknown",
-                    "score": "N/A"
                 },
                 {
                     "rank": 4,
