@@ -4,7 +4,7 @@ const collectionsData = {
             name: "Medal - Bronze",
             image: "img/Bronze_Medal.png",
             players: [
-                { rank: 1, name: "Unknown", score: "N/A" },
+                { rank: 1, name: "HueDisNwPhn", score: "1" },
                 { rank: 2, name: "Unknown", score: "N/A" },
                 { rank: 3, name: "Unknown", score: "N/A" },
                 { rank: 4, name: "Unknown", score: "N/A" },
@@ -36,7 +36,7 @@ const collectionsData = {
             name: "Medal - Gold",
             image: "img/Gold_Medal.png",
             players: [
-                { rank: 1, name: "Unknown", score: "N/A" },
+                { rank: 1, name: "HueDisNwPhn", score: "28" },
                 { rank: 2, name: "Unknown", score: "N/A" },
                 { rank: 3, name: "Unknown", score: "N/A" },
                 { rank: 4, name: "Unknown", score: "N/A" },
@@ -54,7 +54,7 @@ const collectionsData = {
             name: "Most Contests Joined",
             image: "img/most_contest_joined.png",
             players: [
-                { rank: 1, name: "Unknown", score: "N/A" },
+                { rank: 1, name: "HueDisNwPhn", score: "147" },
                 { rank: 2, name: "Unknown", score: "N/A" },
                 { rank: 3, name: "Unknown", score: "N/A" },
                 { rank: 4, name: "Unknown", score: "N/A" },
