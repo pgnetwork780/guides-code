@@ -32,8 +32,8 @@ const cakeData = [
   { rank: 2, name: "MythicalPanda30", cakes: "172" },
   { rank: 3, name: "TGJASSIYT", cakes: "74" },
   { rank: 4, name: "Ghosthunter4233", cakes: "26" },
-  { rank: 5, name: "C69P2W", cakes: "5" },
-  { rank: 6, name: "Unknown", cakes: "N/A" },
+  { rank: 5, name: "HueDisNwPhn", cakes: "19" },
+  { rank: 6, name: "C69P2W", cakes: "5" },
   { rank: 7, name: "Unknown", cakes: "N/A" },
   { rank: 8, name: "Unknown", cakes: "N/A" },
   { rank: 9, name: "Unknown", cakes: "N/A" },
@@ -58,7 +58,7 @@ const levelsData = [
   { rank: 2, name: "Kg_lcky_01", level: "48" },
   { rank: 3, name: "Perry3338", level: "44" },
   { rank: 4, name: "Jeremy2075/Darkshadow52195", level: "40" },
-  { rank: 5, name: "Dharmaveer31", level: "39" },
+  { rank: 5, name: "Dharmaveer31/HueDisNwPhn", level: "39" },
   { rank: 6, name: "MythicalPanda30", level: "27" },
   { rank: 7, name: "Rehan2038", level: "22" },
   { rank: 8, name: "Kautilya3072", level: "16" },
@@ -74,9 +74,9 @@ const playtimeData = [
     { rank: 5, name: "Creepyshorts", playtime: "3350.7h" },
     { rank: 6, name: "Itzomkar1232891", playtime: "3001h" },
     { rank: 7, name: "Kg_lcky_01", playtime: "2515.7h" },
-    { rank: 8, name: "DRONZAR_OP", playtime: "2104h" },
-    { rank: 9, name: "Vishal2697144", playtime: "2026.8h" },
-    { rank: 10, name: "Darkshadow52195", playtime: "1678.7h" }
+    { rank: 8, name: "HueDisNwPhn", playtime: "2294.8h" }
+    { rank: 9, name: "DRONZAR_OP", playtime: "2104h" },
+    { rank: 10, name: "Vishal2697144", playtime: "2026.8h" },
 ];
 // Zombie and Wolf Slayer Exp 
 const collectionsData = [
