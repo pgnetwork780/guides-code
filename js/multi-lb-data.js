@@ -74,9 +74,9 @@ const playtimeData = [
     { rank: 5, name: "Creepyshorts", playtime: "3350.7h" },
     { rank: 6, name: "Itzomkar1232891", playtime: "3001h" },
     { rank: 7, name: "Kg_lcky_01", playtime: "2515.7h" },
-    { rank: 8, name: "HueDisNwPhn", playtime: "2294.8h" }
+    { rank: 8, name: "HueDisNwPhn", playtime: "2294.8h" },
     { rank: 9, name: "DRONZAR_OP", playtime: "2104h" },
-    { rank: 10, name: "Vishal2697144", playtime: "2026.8h" },
+    { rank: 10, name: "Vishal2697144", playtime: "2026.8h" }
 ];
 // Zombie and Wolf Slayer Exp 
 const collectionsData = [
