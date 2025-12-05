@@ -279,7 +279,19 @@ const skillsLeaderboards = {
 // Target Practice
 const targetPracticeLeaderboard = {
     name: "Target Practice",
-    scoreLabel: "Score",
+    scoreLabel: "Time",
+    players: [
+        { rank: 1, name: "Unknown", score: "N/A" },
+        { rank: 2, name: "Unknown", score: "N/A" },
+        { rank: 3, name: "Unknown", score: "N/A" },
+        { rank: 4, name: "Unknown", score: "N/A" },
+        { rank: 5, name: "Unknown", score: "N/A" }
+    ]
+};
+// Arctic Cave Race
+const arcticCaveRace = {
+    name: "Arctic Cave Race",
+    scoreLabel: "Time",
     players: [
         { rank: 1, name: "Unknown", score: "N/A" },
         { rank: 2, name: "Unknown", score: "N/A" },
