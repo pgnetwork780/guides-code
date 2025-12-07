@@ -2364,18 +2364,18 @@ const collectionsData = {
             "players": [
                 {
                     "rank": 1,
+                    "name": "JODHEMANT8975",
+                    "score": "132.3M+"
+                },
+                {
+                    "rank": 2,
                     "name": "Rehan2038",
                     "score": "83.3M+"
                 },
                 {
-                    "rank": 2,
+                    "rank": 3,
                     "name": "ieduoo",
                     "score": "22.1M+"
-                },
-                {
-                    "rank": 3,
-                    "name": "Unknown",
-                    "score": "N/A"
                 },
                 {
                     "rank": 4,
