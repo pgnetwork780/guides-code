@@ -1,4 +1,4 @@
-// Data Here: Achievements, Avg Skill, Cakes, Gems, Crafters Level, Playtime, Slayers, Damage, Networth, Pets, Coins, Skills, Target Practice
+// Data Here: Achievements, Arctic Cave Race, Avg Skill, Cakes, Gems, Crafters Level, Playtime, Slayers, Damage, Networth, Pets, Coins, Skills, Target Practice
 // Not here: Collections, Farming Contests, Boss Time (Or any other with 200-300 lines data)
 // Achievements
 const achievementsData = [
@@ -55,15 +55,15 @@ const gemsData = [
 // Crafters Level 
 const levelsData = [
   { rank: 1, name: "SphinxWraith", level: "91" },
-  { rank: 2, name: "Kg_lcky_01", level: "48" },
-  { rank: 3, name: "Perry3338", level: "44" },
-  { rank: 4, name: "Jeremy2075/Darkshadow52195", level: "40" },
-  { rank: 5, name: "Dharmaveer31/HueDisNwPhn", level: "39" },
-  { rank: 6, name: "MythicalPanda30", level: "27" },
-  { rank: 7, name: "Rehan2038", level: "22" },
-  { rank: 8, name: "Kautilya3072", level: "16" },
-  { rank: 9, name: "SAAD_KING_07726", level: "15" },
-  { rank: 10, name: "Unknown", level: "N/A" }
+  { rank: 2, name: "Froncyte", level: "58" },
+  { rank: 3, name: "Kg_lcky_01", level: "48" },
+  { rank: 4, name: "Perry3338", level: "44" },
+  { rank: 5, name: "Jeremy2075/Darkshadow52195", level: "40" },
+  { rank: 6, name: "Dharmaveer31/HueDisNwPhn", level: "39" },
+  { rank: 7, name: "MythicalPanda30", level: "27" },
+  { rank: 8, name: "Rehan2038", level: "22" },
+  { rank: 9, name: "Kautilya3072", level: "16" },
+  { rank: 10, name: "SAAD_KING_07726", level: "15" }
 ];
 // Playtime
 const playtimeData = [
