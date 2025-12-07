@@ -1102,8 +1102,8 @@ const collectionsData = {
                 },
                 {
                     "rank": 7,
-                    "name": "Unknown",
-                    "score": "N/A"
+                    "name": "JODHEMANT8975",
+                    "score": "37.9M+"
                 },
                 {
                     "rank": 8,
@@ -1903,8 +1903,8 @@ const collectionsData = {
                 },
                 {
                     "rank": 10,
-                    "name": "KrazyZippy69",
-                    "score": "N/A"
+                    "name": "JODHEMANT8975",
+                    "score": "77.4M+"
                 }
             ]
         },
