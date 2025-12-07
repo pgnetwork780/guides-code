@@ -19,12 +19,12 @@ const skillData = [
   { rank: 2, name: "Moerderfisch", level: "50.7" },
   { rank: 3, name: "GRAVITY8303", level: "50.2" },
   { rank: 4, name: "AndyGamer024", level: "50" },
-  { rank: 5, name: "Itzomkar1232891", level: "47.2" },
-  { rank: 6, name: "DRONZAR_OP", level: "46.2" },
-  { rank: 7, name: "Kg_lcky_01", level: "46" },
-  { rank: 8, name: "Rehan2038", level: "42.3" },
-  { rank: 9, name: "Perry3338", level: "39.5" },
-  { rank: 10, name: "Kautilya3072", level: "36.2" }
+  { rank: 5, name: "JODHEMANT8975", level: "48.7" },
+  { rank: 6, name: "Itzomkar1232891", level: "47.2" },
+  { rank: 7, name: "DRONZAR_OP", level: "46.2" },
+  { rank: 8, name: "Kg_lcky_01", level: "46" },
+  { rank: 9, name: "Rehan2038", level: "42.3" },
+  { rank: 10, name: "Perry3338", level: "39.5" }
 ];
 // Cakes
 const cakeData = [
@@ -56,14 +56,14 @@ const gemsData = [
 const levelsData = [
   { rank: 1, name: "SphinxWraith", level: "91" },
   { rank: 2, name: "Froncyte", level: "58" },
-  { rank: 3, name: "Kg_lcky_01", level: "48" },
-  { rank: 4, name: "Perry3338", level: "44" },
-  { rank: 5, name: "Jeremy2075/Darkshadow52195", level: "40" },
-  { rank: 6, name: "Dharmaveer31/HueDisNwPhn", level: "39" },
-  { rank: 7, name: "MythicalPanda30", level: "27" },
-  { rank: 8, name: "Rehan2038", level: "22" },
-  { rank: 9, name: "Kautilya3072", level: "16" },
-  { rank: 10, name: "SAAD_KING_07726", level: "15" }
+  { rank: 3, name: "JODHEMANT8975", level: "50" },
+  { rank: 4, name: "Kg_lcky_01", level: "48" },
+  { rank: 5, name: "Perry3338", level: "44" },
+  { rank: 6, name: "Jeremy2075/Darkshadow52195", level: "40" },
+  { rank: 7, name: "Dharmaveer31/HueDisNwPhn", level: "39" },
+  { rank: 8, name: "MythicalPanda30", level: "27" },
+  { rank: 9, name: "Rehan2038", level: "22" },
+  { rank: 10, name: "Kautilya3072", level: "16" }
 ];
 // Playtime
 const playtimeData = [
@@ -71,12 +71,12 @@ const playtimeData = [
     { rank: 2, name: "Perry3338", playtime: "5064.1h" },
     { rank: 3, name: "gelacktic", playtime: "3841h" },
     { rank: 4, name: "DueBacon2007102", playtime: "3809.1h" },
-    { rank: 5, name: "Creepyshorts", playtime: "3350.7h" },
-    { rank: 6, name: "Itzomkar1232891", playtime: "3001h" },
-    { rank: 7, name: "Kg_lcky_01", playtime: "2515.7h" },
-    { rank: 8, name: "HueDisNwPhn", playtime: "2294.8h" },
-    { rank: 9, name: "DRONZAR_OP", playtime: "2104h" },
-    { rank: 10, name: "Vishal2697144", playtime: "2026.8h" }
+    { rank: 5, name: "JODHEMANT8975", playtime: "3352.3h" },
+    { rank: 6, name: "Creepyshorts", playtime: "3350.7h" },
+    { rank: 7, name: "Itzomkar1232891", playtime: "3001h" },
+    { rank: 8, name: "Kg_lcky_01", playtime: "2515.7h" },
+    { rank: 9, name: "HueDisNwPhn", playtime: "2294.8h" },
+    { rank: 10, name: "DRONZAR_OP", playtime: "2104h" }
 ];
 // Zombie and Wolf Slayer Exp 
 const collectionsData = [
