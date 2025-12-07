@@ -54,16 +54,16 @@ const gemsData = [
 ];
 // Crafters Level 
 const levelsData = [
-  { rank: 1, name: "SphinxWraith", level: "91" },
-  { rank: 2, name: "Froncyte", level: "58" },
-  { rank: 3, name: "JODHEMANT8975", level: "50" },
-  { rank: 4, name: "Kg_lcky_01", level: "48" },
-  { rank: 5, name: "Perry3338", level: "44" },
-  { rank: 6, name: "Jeremy2075/Darkshadow52195", level: "40" },
-  { rank: 7, name: "Dharmaveer31/HueDisNwPhn", level: "39" },
-  { rank: 8, name: "MythicalPanda30", level: "27" },
-  { rank: 9, name: "Rehan2038", level: "22" },
-  { rank: 10, name: "Kautilya3072", level: "16" }
+  { rank: 1, name: "HeGzoStRqFe", level: "101" },
+  { rank: 2, name: "SphinxWraith", level: "91" },
+  { rank: 3, name: "Froncyte", level: "58" },
+  { rank: 4, name: "JODHEMANT8975", level: "50" },
+  { rank: 5, name: "Kg_lcky_01", level: "48" },
+  { rank: 6, name: "Perry3338", level: "44" },
+  { rank: 7, name: "Jeremy2075/Darkshadow52195", level: "40" },
+  { rank: 8, name: "Dharmaveer31/HueDisNwPhn", level: "39" },
+  { rank: 9, name: "MythicalPanda30", level: "27" },
+  { rank: 10, name: "Rehan2038", level: "22" }
 ];
 // Playtime
 const playtimeData = [
