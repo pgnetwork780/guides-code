@@ -8,8 +8,8 @@ const achievementsData = [
     { rank: 4, name: "Dharmaveer31", achievements: "57" },
     { rank: 5, name: "SammyMishu", achievements: "52" },
     { rank: 6, name: "Perry3338", achievements: "51" },
-    { rank: 7, name: "TGJASSIYT", achievements: "49" },
-    { rank: 8, name: "Rehan2038", achievements: "48" },
+    { rank: 7, name: "Rehan2038", achievements: "51" },
+    { rank: 8, name: "TGJASSIYT", achievements: "49" },
     { rank: 9, name: "Kautilya3072", achievements: "46" },
     { rank: 10, name: "Darkshadow52195", achievements: "41" }
 ];
@@ -23,7 +23,7 @@ const skillData = [
   { rank: 6, name: "Itzomkar1232891", level: "47.2" },
   { rank: 7, name: "DRONZAR_OP", level: "46.2" },
   { rank: 8, name: "Kg_lcky_01", level: "46" },
-  { rank: 9, name: "Rehan2038", level: "42.3" },
+  { rank: 9, name: "Rehan2038", level: "44.8" },
   { rank: 10, name: "Perry3338", level: "39.5" }
 ];
 // Cakes
