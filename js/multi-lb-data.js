@@ -4,14 +4,14 @@
 const achievementsData = [
     { rank: 1, name: "SphinxWraith", achievements: "70" },
     { rank: 2, name: "Kg_lcky_01", achievements: "64" },
-    { rank: 3, name: "MythicalPanda30", achievements: "60" },
-    { rank: 4, name: "Dharmaveer31", achievements: "57" },
-    { rank: 5, name: "SammyMishu", achievements: "52" },
-    { rank: 6, name: "Perry3338", achievements: "51" },
-    { rank: 7, name: "Rehan2038", achievements: "51" },
+    { rank: 3, name: "hornrush89", achievements: "62" },
+    { rank: 4, name: "MythicalPanda30", achievements: "60" },
+    { rank: 5, name: "Dharmaveer31", achievements: "57" },
+    { rank: 6, name: "SammyMishu", achievements: "52" },
+    { rank: 7, name: "Perry3338", achievements: "51" },
     { rank: 8, name: "TGJASSIYT", achievements: "49" },
-    { rank: 9, name: "Kautilya3072", achievements: "46" },
-    { rank: 10, name: "Darkshadow52195", achievements: "41" }
+    { rank: 9, name: "Rehan2038", achievements: "48" },
+    { rank: 10, name: "Kautilya3072", achievements: "46" }
 ];
 // Avg Skill
 const skillData = [
@@ -23,7 +23,7 @@ const skillData = [
   { rank: 6, name: "Itzomkar1232891", level: "47.2" },
   { rank: 7, name: "DRONZAR_OP", level: "46.2" },
   { rank: 8, name: "Kg_lcky_01", level: "46" },
-  { rank: 9, name: "Rehan2038", level: "44.8" },
+  { rank: 9, name: "Rehan2038", level: "42.3" },
   { rank: 10, name: "Perry3338", level: "39.5" }
 ];
 // Cakes
@@ -56,14 +56,14 @@ const gemsData = [
 const levelsData = [
   { rank: 1, name: "HeGzoStRqFe", level: "101" },
   { rank: 2, name: "SphinxWraith", level: "91" },
-  { rank: 3, name: "Froncyte", level: "58" },
-  { rank: 4, name: "JODHEMANT8975", level: "50" },
-  { rank: 5, name: "Kg_lcky_01", level: "48" },
-  { rank: 6, name: "Perry3338", level: "44" },
-  { rank: 7, name: "Jeremy2075/Darkshadow52195", level: "40" },
-  { rank: 8, name: "Dharmaveer31/HueDisNwPhn", level: "39" },
-  { rank: 9, name: "MythicalPanda30", level: "27" },
-  { rank: 10, name: "Rehan2038", level: "22" }
+  { rank: 3, name: "hornrush89", level: "88" },
+  { rank: 4, name: "Froncyte", level: "58" },
+  { rank: 5, name: "JODHEMANT8975", level: "50" },
+  { rank: 6, name: "Kg_lcky_01", level: "48" },
+  { rank: 7, name: "Perry3338", level: "44" },
+  { rank: 8, name: "Jeremy2075/Darkshadow52195", level: "40" },
+  { rank: 9, name: "Dharmaveer31/HueDisNwPhn", level: "39" },
+  { rank: 10, name: "MythicalPanda30", level: "27" }
 ];
 // Playtime
 const playtimeData = [
