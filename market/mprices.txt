@@ -116,7 +116,7 @@
 116: ["Rancher boots",10000,1000]
 117: ["Enchanted melon",10000,1000]
 118: ["Enchanted golden melon",10000,1000]
-119: ["Enchanted beetroot",10000,1000]
+119: ["Enchanted beetroot", 315, 2264, 251139]
 120: ["Enchanted golden beetroot",10000,1000]
 121: ["Enchanted beetroot seed",10000,1000]
 122: ["Enchanted brown mushroom",10000,1000]
