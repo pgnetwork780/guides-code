@@ -1128,13 +1128,13 @@ const collectionsData = {
             "players": [
                 {
                     "rank": 1,
-                    "name": "ThENoOb1737",
-                    "score": "200M+"
+                    "name": "Luv_bats007",
+                    "score": "219M+"
                 },
                 {
                     "rank": 2,
-                    "name": "Unknown",
-                    "score": "N/A"
+                    "name": "ThENoOb1737",
+                    "score": "200M+"
                 },
                 {
                     "rank": 3,
